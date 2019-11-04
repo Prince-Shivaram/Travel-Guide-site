@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    		 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    		 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+
+    		 <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  	<style type="text/css">
+
+      .nav-item:hover
+{
+  
+  
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-color: red;
+
+}
+  				.zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+          }
+          h1
+			{
+ 			font-family: 'Sacramento', cursive;
+			}
+			p
+{
+	font-family: 'Barlow Condensed', sans-serif;
+}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+h4
+{
+font-family: 'Cinzel', serif;	
+}
+#content
+{
+	display: none;
+}
+
+
+
+#dropdown-item
+{
+	 margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+
+ </style>
+
+ <script type="text/javascript">
+
+ $("document").ready(function(){
+ 	$("#more").click(function(){
+ 		$("#content").show();
+ 	});
+ 	$("#less").click(function(){
+ 		$("#content").hide();
+ 	});
+ 	
+ })	;
+	
+
+ </script>
+
+</head>
+<body>
+	<div class="container-fluid badge-light" style="height: 60px;width: 100% ;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form >
+            <input type="text" name="search hotel" placeholder="search place" >
+            <button class=" " style="background-color: #76D7C4" >search</button>
+           </form>
+         </div>
+        
+      </div>
+    </div>
+	<section class="sticky-top">
+	<ul id="des1" class="nav  ml-auto text-light bg-light sticky-top mb-1"  style="background-color: white ;border-bottom: 4px solid grey; border-top: 1px solid red;height: 100px">
+
+
+				<li class="nav-item my-auto my-auto ">
+   					 <a class="nav-link text-dark" href="index.html" >home</a>
+ 			    </li>
+  				<li class="nav-item my-auto my-auto ">
+   					 <a class="nav-link text-dark" href="popularcities.html" >popular cities</a>
+ 			    </li>
+          		<li class="nav-item my-auto ">
+             		<a class="nav-link text-dark" href="touristplace.html" >tourist places</a>
+          		</li>
+          		
+ 			    <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" href="#" >hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item active my-auto">
+    				<a class="nav-link text-dark" href="popularstates.html" style="font-weight: bold;">popular states</a>
+  			   </li>
+  			  
+           <li class="nav-item my-auto ">
+            <a class="nav-link text-dark" href="contact.html" >contact us</a>
+           </li>
+           <div class="dropdown my-auto ">
+         <button class="btn  dropdown-toggle my-auto bg-light"  id="dropdownMenuButton" data-toggle="dropdown"   style="font-family: 'Cinzel', serif; ">
+            Catogaries
+          </button>
+         <div class="dropdown-menu" style="background-color:white;" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item text-warning" href="#">hill station</a>
+            <a class="dropdown-item text-warning" href="#">Honeymoon destination</a>
+          <a class="dropdown-item text-warning" href="#">Summer destination</a>
+           <a class="dropdown-item text-warning" href="#">Winter destination</a>
+
+        <a class="dropdown-item text-warning" href="#">famous temples </a>
+        <a class="dropdown-item text-warning" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+  			    
+			</ul>
+		</section>
+
+		<section>
+			<div class="container-fluid  mt-4 " >
+				<div class="row">
+				<div class="col-lg-2 col-md-2 col-2 mx-auto my-auto">
+					<div class="dropdown ">
+ 				 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				east  indian states
+  				</button>
+ 				 <div class="dropdown-menu" style="background-color: white" aria-labelledby="dropdownMenuButton">
+   				 <a class="dropdown-item" href="#">Bihar</a>
+    				<a class="dropdown-item" href="bangal.html">West bangal</a>
+    			<a class="dropdown-item" href="#">Odissa</a>
+    			 <a class="dropdown-item" href="#">Jharkhand</a>
+
+ 				 </div>
+				</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-2">
+					<div class="dropdown">
+ 				 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">west indian states
+  				</button>
+ 				 <div class="dropdown-menu "  style="background-color: white" aria-labelledby="dropdownMenuButton">
+   				 <a class="dropdown-item" href="#">Goa</a>
+    				<a class="dropdown-item" href="#"> Gujrat</a>
+    			<a class="dropdown-item" href="#">Maharastra</a>
+    			<a class="dropdown-item" href="#">Daman and Diu</a>
+    			<a class="dropdown-item" href="#">Dadra-nagar haveli</a>
+
+
+ 				 </div>
+				</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-2">
+				<div class="dropdown">
+ 				 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">north indian states
+  				</button>
+ 				 <div class="dropdown-menu "  style="background-color: white" aria-labelledby="dropdownMenuButton">
+   				 <a class="dropdown-item" href="#">Punjab</a>
+    				<a class="dropdown-item" href="#">Uttar Pradesh</a>
+    			<a class="dropdown-item" href="#">Uttarakhand</a>
+    			 <a class="dropdown-item" href="#">Haryana</a>
+    			<a class="dropdown-item" href="#">Delhi</a>
+    			<a class="dropdown-item" href="#">Laddakh</a>
+    			<a class="dropdown-item" href="#">Jammu Kashmir</a>
+      			<a class="dropdown-item" href="#">Himachal Pradesh</a>
+
+
+ 				 </div>
+				</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-2">
+					<div class="dropdown">
+ 				 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">south indian states
+  				</button>
+ 				 <div class="dropdown-menu"  style="background-color: white" aria-labelledby="dropdownMenuButton">
+   				 <a class="dropdown-item" href="#">Tamilnadu</a>
+    				<a class="dropdown-item" href="#">Kerela</a>
+    			<a class="dropdown-item" href="#">Karnataka</a>
+      			<a class="dropdown-item" href="#">Andhra Pradesh</a>
+    			<a class="dropdown-item" href="#">Pondicherry</a>
+    			<a class="dropdown-item" href="#">Telangana</a>
+    			<a class="dropdown-item" href="#">Lakshadweep</a>
+    			<a class="dropdown-item" href="#">Andman Nicobar</a>
+
+ 				 </div>
+				</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-2">
+				<div class="dropdown">
+ 				 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				north-east states
+  				</button>
+ 				 <div class="dropdown-menu "  style="background-color: white" aria-labelledby="dropdownMenuButton">
+   				 <a class="dropdown-item" href="#">Arunachal Pradesh</a>
+    				<a class="dropdown-item" href="#">Assam</a>
+    			<a class="dropdown-item" href="#">Manipur</a>
+    			 <a class="dropdown-item" href="#">Meghalaya</a>
+    			<a class="dropdown-item" href="#">Mizoram</a>
+    			<a class="dropdown-item" href="#">Nagaland</a>
+    			<a class="dropdown-item" href="#">Sikkim</a>
+    			<a class="dropdown-item" href="#">Tripura</a>
+
+ 				 </div>
+				</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-2">
+					<div class="dropdown">
+ 				 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				central  indian states
+  				</button>
+ 				 <div class="dropdown-menu "  style="background-color: white" aria-labelledby="dropdownMenuButton">
+   				 <a class="dropdown-item bg-success" href="#">Madhya Pradesh</a>
+    				<a class="dropdown-item" href="#">Chattisgarh</a>
+    			<a class="dropdown-item" href="#">Rajasthan</a>
+ 				 </div>
+				</div>
+				</div>
+			</div>
+			</div>
+
+<section>
+	<div class="container-fluid" style="height: 350px;margin-top: 20px; width: 100%">
+				
+					    
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+
+  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <img src="images\fg4.jpg" alt="goa" style="height: 350px; width: 100%">
+      <div class="carousel-caption">
+   
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\fg8.jpg" alt="Kerela" style="height: 350px; width: 100%">
+      <div class="carousel-caption">
+    
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\fg6.jpg" alt="taj mahal" style="height: 350px; width: 100%">
+      <div class="carousel-caption">
+   
+  
+  </div>
+    </div>
+  </div>
+				
+				 <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+		</section>
+
+			<section class="mt-5">
+					
+			<div  id="mmaincont"class="container mt-5 bg-light" style="margin-top: 450px;">
+				<h2 class="text-center text-capitalize mb-3 mt-5"  style="margin-top: 500px">have a look of some famous states</h2>
+				<hr class="w-50 bg-warning text-center">
+				<div class="row mb-5 mt-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s1.jpg" style="width: 750px; height: 250px" class="img-fluid">
+
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Tamilnadu - state of temple</h4>
+						<hr class="w-75 bg-warning">
+						<p>Tamil Nadu is renowned for its temple towns and heritage sites and has some of the most remarkable temple architecture in the country. Tamil Nadu is the most popular state for tourism in the country and a living tradition of music, dance and folk arts. Famous temples of Tamil Nadu includes Meenakshi Amman Temple,Great Living Chola Temples,Group of Monuments in Mahabalipuram and famous Lord Shiva Temples</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<a href="tamilnadu.html"><button id="tamilnadu" class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button></a>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s2.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Maharastra -monsoon destination</h4>
+						<hr class="w-75 bg-warning">
+						<p>Maharashtra state is the most visited state by domestic tourists in country and attracts many tourists from different states and foreigners too. Aurangabad is the tourism capital of Maharashtra and other major urban centers include Mumbai, Pune, Nashik, Aurangabad, Nanded and Nagpur. The geography of Maharashtra shows its divine nature in full glory, especially during the monsoon season and when every destinations offer natural landscape and better holiday experience.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s3.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Uttarpradesh -popular state for tourist</h4>
+						<hr class="w-75 bg-warning">
+						<p>Uttar Pradesh has a large number of historical monuments and places of religious significance. The state is one of the most popular and an established tourist destination for both Indians and international tourists and also home of India’s most visited sites, the Taj Mahal, and holiest city of Varanasi</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s4.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Karnataka – Historical Monuments State</h4>
+						<hr class="w-75 bg-warning">
+						<p>Karnataka ranked as the fifth most popular state in India for tourism and home to 507 of the 3600 centrally protected monuments in India. Tourism in Karnataka can be divided as Hill Stations,Coastal town,ancient temples and protected monuments, The most popular protected monuments of Karnataka includes Virupaksha Temple Hampi,Group of Monuments at Pattadakal, Chennakesava Temple,Mysore Palace,Badami cave temples and temple groups at Aihole.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s5.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Rajasthan – State of Breathtaking Views</h4>
+						<hr class="w-75 bg-warning">
+						<p>Rajasthan is the most popular tourist destination in India for both domestic and international tourists and part of the Golden Triangle for tourists visiting India. The Royal State attracts tourists for historical forts and palaces, that includes lakes palaces of Udaipur,palaces of Jaipur and desert forts of Chittorgarh,Jodhpur, Bikaner and Jaisalmer.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s6.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Kerala – Best Family Holidays State</h4>
+						<hr class="w-75 bg-warning">
+						<p>Kerala is one of the ten paradises in the world and one of the niche holiday destinations in India. The state is famous for for its ecotourism initiatives,hill stations,wildlife sanctuaries and beautiful backwaters. Kerala -God’s Own Country is one of the most visited tourism destinations in India.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s7.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Goa – Most Famous State in India</h4>
+						<hr class="w-75 bg-warning">
+						<p>Goa is famous for its beaches,foreign tourist,places of worship,culture and a heritage museum. The smalles state of India host large number of both domestic and international tourists every year and major tourist attractions of Goa includes Bom Jesus Basilica, Fort Aguada, wax museum and the Churches and Convents of Goa heritage site.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s9.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Madhya Pradesh – State for Wildlife Tour</h4>
+						<hr class="w-75 bg-warning">
+						<p>Madhya Pradesh is called as the Heart of India and was awarded as the best tourism state award in 2012. Tourism in Madhya Pradesh includes cultural heritage,carved temples, stupas and world heritage sites. Several cities in Madhya Pradesh are extraordinary for wildlife and scenic beauty such as Bandhavgarh National Park,Kanha National Park,Satpura National Park,Pench National Park and National Chambal Sanctuary..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s10.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Orissa – Emerging State for Tourism</h4>
+						<hr class="w-75 bg-warning">
+						<p>The long coastline, temples, monuments,lakes and frolicking rivers of Odisha are the major tourist attractions in the country. Odisha is one of the major tourism sectors of India with various attractions and places such as temples of Bhubaneswar,beautiful beaches,Buddhist monuments,wildlife reserves, the arts and festivals.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s11.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Jammu and Kashmir – Best Place For Summer Snow</h4>
+						<hr class="w-75 bg-warning">
+						<p>Jammu and Kashmir state of India is the most important tourist places of the country with number of natural paradise that includes the Mughal Gardens,houseboat on Dal Lake, snow capped mountains and valley of Kashmir. Tourist places of Kashmir also incudes Gulmarg,Sonmarg,Pahalgam and Srinagar.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s12.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Andhra Pradesh – Most Preferred Tourist State</h4>
+						<hr class="w-75 bg-warning">
+						<p>The state of Andhra Pradesh is known as the Koh-i-Noor of India and has a variety of tourist attractions including sea beaches, rolling hills, natural caves, amazing wildlife and temples. Some of the tourist spots in Andhra Pradesh are beautiful beaches,Borra Caves,Araku Valley,Buddhist centres and five ancient Hindu temples of Lord Shiva..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s13.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Gujarat – Lion State of Western India</h4>
+						<hr class="w-75 bg-warning">
+						<p>Gujarat is one of the most popular tourist regions in the country and visited by large number of domestic and international tourists. Tourism in Gujarat includes the hills of Saputara, Great Rann of Kutch,birthplace of Mahatma Gandhi and the only place in the world to see Indian Lions. The Khushboo Gujarat Ki campaign has increased the tourism in Gujarat and that covers Wildlife tourism,Religious tourism,Cultural tourism,heritage tourism and Medical tourism.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s14.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">West Bengal – The State of Kingdoms</h4>
+						<hr class="w-75 bg-warning">
+						<p>West Bengal has some of the marvelous landscape features,natural scenic beauty and India’s most preferred travel destinations like Darjeeling, Sundarbans,Sandakphu,Howrah Bridge,Great Banyan Tree and Bishnupur Temples. The state of West Bengal has significant architectural and natural heritage, that attracts tourists from around the world</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<a href="bangal.html"><button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button></a>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s15.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Uttarakhand – Devbhumi of Indian States</h4>
+						<hr class="w-75 bg-warning">
+						<p>Uttarakhand popularly known as land of Gods due to the presence of pilgrimage sites that includes Char Dham,Panch Badri,Panch Kedar,Panch Prayag and Haridwar. The state is also home to the first national park in India,Valley of Flowers,Kumbh Mela festival and hill stations. Most famous Hindu pilgrimage sites in Uttarakhand includes Kedarnath,Badrinath,Gangotri,Tungnath,Karnaprayag and Jageshwar.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s16.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Telangana –  India’s 29th State</h4>
+						<hr class="w-75 bg-warning">
+						<p>Telangana is one of the 29 states in India and ranked one of the best place in the world for tourist places that includes historical places, monuments, forts, water falls, forests and temples. Tourism in Telangana includes Charminar,Kakatiya Kala Thoranam,Golconda Fort,Yadagirigutta,Thousand Pillar Temple and Bhadrachalam Temple.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s17.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Bihar – Oldest Inhabited State</h4>
+						<hr class="w-75 bg-warning">
+						<p>Bihar has a rich culture and heritage, known as one of the oldest inhabited places in the world. The state is dotted with innumerable ancient monuments and these tourist attractions visited by large numbers of tourists from all over the world, specially Mahabodhi temple,Asokan pillar,peace pagoda and Buddhist Stupa.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s18.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 mb-5">
+						<h4 class="text-center text-capitalize text-secondary">Punjab – Land Of Martyrs</h4>
+						<hr class="w-75 bg-warning">
+						<p>Punjab is a well-known state in India that is located at the northwest end of the country. This state has gained recognition as the 'land of five rivers'. The five rivers are Sutlej, Ravi, Beas, Chenab and Jhelum. The state of Punjab acts as a clear demarcation of India from the neighbouring country Pakistan.</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+					</div>
+					<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s19.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 mb-5">
+						<h4 class="text-center text-capitalize text-secondary">Delhi – Capital Of India</h4>
+						<hr class="w-75 bg-warning">
+						<p>Delhi is of great historical significance as an important commercial, transport, and cultural hub, as well as the political centre of India. According to legend, the city was named for Raja Dhilu, a king who reigned in the region in the 1st century BCE. The names by which the city has been known—including Delhi, Dehli, Dilli, and Dhilli, among others—likely are corruptions of his name. .</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>	
+					</div>
+					
+				</div>
+		</section>
+
+
+		<section>
+			<div class="container ">
+				<div class="row text-center mb-3">
+
+					<button id="more" class="btn center-block text-primary text-center  ml-5 mx-auto" style="background-color: #AEB6BF">veiw 7 sister state</button>
+				</div>
+				<div id="content" class="container mb-5 bg-light">
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s20.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 ">
+						<h4 class="text-center text-capitalize text-secondary">Arunachal pradesh</h4>
+						<hr class="w-75 bg-warning">
+						<p>Arunachal Pradesh, state of India. It constitutes a mountainous area in the extreme northeastern part of the country and is bordered by the kingdom of Bhutan to the west, the Tibet Autonomous Region of China to the north, Myanmar (Burma) and the Indian state of Nagaland to the south and southeast, and the Indian state of Assam to the south and southwest. The capital is Itanagar..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s21.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 ">
+						<h4 class="text-center text-capitalize text-secondary">Assams - State Of Tea garden </h4>
+						<hr class="w-75 bg-warning">
+						<p>Assam, state of India. It is located in the northeastern part of the country and is bounded to the north by the kingdom of Bhutan and the state of Arunachal Pradesh, to the east by the states of Nagaland and Manipur, to the south by the states of Mizoram and Tripura, and to the west by Bangladesh and the states of Meghalaya and West Bengal. The name Assam is derived from the word asama, meaning “peerless” in the now extinct Ahom language..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s22.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Manipur</h4>
+						<hr class="w-75 bg-warning">
+						<p>Manipur, state of India, located in the northeastern part of the country. It is bordered by the Indian states of Nagaland to the north, Assam to the west, and Mizoram to the southwest and by Myanmar (Burma) to the south and east. Like other northeastern states, it is largely isolated from the rest of India. The name Manipur means “land of gems.” Its economy centres on agriculture and forestry, and trade and cottage industries also are important..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s23.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 ">
+						<h4 class="text-center text-capitalize text-secondary">Meghalaya - State Of Heavy Rain</h4>
+						<hr class="w-75 bg-warning">
+						<p>Meghalaya, state of India, located in the northeastern part of the country. It is bounded by the Indian state of Assam to the north and northeast and by Bangladesh to the south and southwest. The state capital is the hill town of Shillong, located in east-central Meghalaya.One of the world’s wettest regions is found in Meghalaya—Cherrapunji, which has an average annual precipitation of about 450 inches (11,430 mm) during monsoon season (from May to September). </p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s24.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 ">
+						<h4 class="text-center text-capitalize text-secondary">Mizoram</h4>
+						<hr class="w-75 bg-warning">
+						<p>Mizoram, state of India. It is located in the northeastern part of the country and is bounded by Myanmar (Burma) to the east and south and Bangladesh to the west and by the states of Tripura to the northwest, Assam to the north, and Manipur to the northeast. The capital is Aizawl, in the north-central part of the state..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s25.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6">
+						<h4 class="text-center text-capitalize text-secondary">Nagaland</h4>
+						<hr class="w-75 bg-warning">
+						<p>Nagaland, state of India, lying in the hills and mountains of the northeastern part of the country. It is one of the smaller states of India. Nagaland is bounded by the Indian states of Arunachal Pradesh to the northeast, Manipur to the south, and Assam to the west and northwest and the country of Myanmar (Burma) to the east. The state capital is Kohima, located in the southern part of Nagaland..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-6">
+						<div class="zoom">
+							<img src="images\s26.jpg" style="width: 750px; height: 250px" class="img-fluid">
+						</div>
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-6 ">
+						<h4 class="text-center text-capitalize text-secondary">Tripura</h4>
+						<hr class="w-75 bg-warning">
+						<p>Tripura, state of India. It is located in the northeastern part of the subcontinent. It is bordered to the north, west, and south by Bangladesh, to the east by the state of Mizoram, and to the northeast by the state of Assam. It is among the smallest of India’s states and is located in an isolated hilly region of the country, with various indigenous peoples—or tribes—accounting for a significant portion of the population. The capital is Agartala, near the Bangladesh border in the northwestern part of the state..</p>
+						<button class="btn bg-success text-warning">book trip</button>
+						<button class="btn bg-success mx-auto text-capitalize text-warning"> tourist places</button>
+					</div>
+						
+					</div>
+					<div class="row text-center mb-5">
+				   <button id="less" class="btn center-block text-center  ml-5 mx-auto" style="background-color: #58D68D">veiw less</button>
+				</div>
+				</div>
+				
+			</div>
+		</section>
+
+
+		<section>
+			<div class=" container-fluid bg-dark">
+				<div class="row">
+					<p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ut beatae consectetur quis voluptates explicabo consequatur facere, quaerat quo sint hic, doloribus eaque, illo officiis dolorum tempore aspernatur maiores optio.</p>
+
+				</div>
+			</div>
+			
+		</section>
+	
+</body>
+</html>

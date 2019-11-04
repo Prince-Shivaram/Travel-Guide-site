@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    		 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    		  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		.nav-item:hover
+{
+  
+  
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-color: red;
+
+}
+		
+	.jumbotron {
+  position:relative;
+  overflow:hidden;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+.jumbotron-background {
+  object-fit:cover;
+  font-family: 'object-fit: cover;';
+  position:absolute;
+  top:0;
+  z-index:1;
+  width:100%;
+  height:100%;
+  opacity:0.5;
+}
+
+img.blur {
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+.zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+        }
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+h1
+{
+ font-family: 'Sacramento', cursive;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid badge-light" style="height: 60px;width: 100% ;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form class="my-auto">
+            <input type="text" name="search hotel" style="height: 30px;" placeholder="search place">
+            <button class=" " style="background-color: #76D7C4" >search</button>
+           </form>
+         </div>
+        
+      </div>
+    </div>
+
+	<section class="sticky-top">
+	
+	<ul id="des1"class="nav  ml-auto text-light sticky-top bg-light"  style="background-color: white ;border-bottom: 4px solid grey;  border-top: 1px solid red;height: 100px">
+
+				<li class="nav-item my-auto ">
+   					 <a class="nav-link text-dark " href="index.html" >home</a>
+ 			    </li>
+  				<li class="nav-item my-auto">
+   					 <a class="nav-link text-dark" href="popularcities.html" >popular cities</a>
+ 			    </li>
+          <li class="nav-item active my-auto">
+             <a class="nav-link text-dark" href="touristplace.html" style="font-weight: bold;" >tourist places</a>
+          </li>
+ 			    <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" href="#" >hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" href="popularstates.html" >popular states</a>
+  			   </li>
+  			   
+           <li class="nav-item my-auto">
+            <a class="nav-link text-dark" href="contact.html" >contact us</a>
+           </li>
+           <div class="dropdown my-auto">
+         <button class="btn  dropdown-toggle my-auto bg-light"  id="dropdownMenuButton" data-toggle="dropdown"   style="font-family: 'Cinzel', serif; ">
+            Catogaries
+          </button>
+         <div class="dropdown-menu" style="background-color: white;" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item bg-faded text-warning" href="hillstation.html">hill station</a>
+            <a class="dropdown-item text-warning" href="#">Honeymoon destination</a>
+          <a class="dropdown-item text-warning" href="#">Summer destination</a>
+           <a class="dropdown-item text-warning" href="#">Winter destination</a>
+
+        <a class="dropdown-item text-warning" href="#">famous temples </a>
+        <a class="dropdown-item text-warning" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+  			     
+			</ul>
+</section>
+
+<section>
+	<div class="jumbotron jumbotron-fluid bg-dark">
+  
+ 		 <div class="jumbotron-background">
+    		<img src="images\h25.jpg" class="blur ">
+  		 </div>
+
+  		<div class="container text-white">
+    	<p class="lead text-capitalize text-center ">here is some famous tourist places in india</p>
+    		<ul class="nav  ml-auto  ">
+				
+  				<li class="nav-item ">
+   					 <a class="nav-link text-light  sticky-top" href="#northindia">north india </a>
+ 			    </li>
+         		 <li class="nav-item ">
+             		<a class="nav-link  text-light sticky-top" href="#southindia">south india</a>
+          		</li>
+ 			    <li class="nav-item">
+    				<a class="nav-link  text-light sticky-top" href="#eastindia">east india</a>
+  			    </li>
+ 			    
+  			    <li class="nav-item">
+    				<a class="nav-link  text-light  sticky-top" href="#westindia">west india</a>
+  			    </li>
+  			    <li class="nav-item">
+    				<a class="nav-link text-light  sticky-top" href="#">north-east</a>
+  			    </li>
+           		<li class="nav-item">
+            		<a class="nav-link text-light  sticky-top" href="#">central india</a>
+           		</li>
+  			     
+			</ul>
+  		</div>
+	</div>
+
+</section>
+
+
+<section>
+	<div id="northindia" class="container mx-auto ml-auto  bg-light">
+		<h3 class="text-center text-capitalize text-dark mx-auto ml-auto">famous tourist places in north india</h3>
+		<hr class=" text-center bg-secondary w-50">
+
+		<div  class="row">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\laddakh1.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">Laddakh & kashmir</p><a>
+
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\delhincr.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">India Gate</p></a>
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\natpk.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">Jim Corbet park</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\risi3.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">Rishikesh</p></a>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\masoori1.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">masoori</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\dharm1.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">Dharamshala</p></a>
+			</div>
+		
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\kedar1.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">Kedarnath</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\gold.jpg" class="img-fluid">
+				</div>
+				<a href="northindia.html"><p class="text-center">Golden Temple</p></a>
+			</div>
+		<a href="northindia.html" class="text-center mx-auto"><button class=" btn text-center text-capitalize mx-auto ml-auto bg-warning">view more</button></a>
+		</div>
+	</div>
+</section>
+
+
+<section>
+	<div id="southindia" class="container bg-light">
+		<h3 class="text-capitalize text-center text-dark ml-auto mx-auto mt-4">famous tourist places in south india</h3>
+		<hr class="text-center bg-primary mx-auto ml-auto w-50">
+
+		<div class="row bg-light">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\amni1.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">Andman & nicobar</p><a>
+
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\tekka.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">tekkady</p></a>
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\ala.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">Alleppey</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\varkala.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">varkala</p></a>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\maha.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">mahabalipuram</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\bandi.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">bandipur national park</p></a>
+			</div>
+		
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\dandeli2.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">dandeli</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\jog2.jpg" class="img-fluid">
+				</div>
+				<a href="southindia.html"><p class="text-center">jog waterfall</p></a>
+			</div>
+			<a href="southindia.html" class="text-center mx-auto"><button class=" btn text-center text-capitalize mx-auto ml-auto bg-warning">view more</button></a>
+		</div>
+	</div>
+
+	</div>
+
+
+</section>
+
+<section>
+	<div  id="eastindia" class="container bg-light">
+		<h3 class="text-capitalize text-center text-dark ml-auto mx-auto mt-4">famous tourist places in east india</h3>
+		<hr class="text-center bg-primary mx-auto ml-auto w-50">
+
+		<div class="row bg-light">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\kazi1.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">kaziranga park</p><a>
+
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\ziro2.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">ziro</p></a>
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\bodh.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">bodhgaya</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\kona.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">konark</p></a>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\puri.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">puri</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\kol1.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">kolkata</p></a>
+			</div>
+		
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\nam2.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">nameri national park</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\maj.jpg" class="img-fluid">
+				</div>
+				<a href="east.html"><p class="text-center">majuli</p></a>
+			</div>
+			<a href="east.html" class="text-center mx-auto"><button class=" btn text-center text-capitalize mx-auto ml-auto bg-warning">view more</button></a>
+		</div>
+	</div>
+
+	</div>
+
+</section>
+
+
+<section>
+	<div  id="westindia" class="container bg-light">
+		<h3 class="text-capitalize text-center text-dark ml-auto mx-auto mt-4">famous tourist places in west india</h3>
+		<hr class="text-center bg-primary mx-auto ml-auto w-50">
+
+		<div class="row bg-light">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\aja2.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">jaisalmer</p><a>
+
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\ran.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">ranthambhor</p></a>
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\mal.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">malshej,ghat</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\jod.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">jodhpur</p></a>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\gir.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">gir,gujrat</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\pus.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">pushkar</p></a>
+			</div>
+		
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\mon.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">mount abu</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\man.jpg" class="img-fluid">
+				</div>
+				<a href="westindia.html"><p class="text-center">mandwa</p></a>
+			</div>
+			<a href="westindia.html" class="text-center mx-auto"><button class=" btn text-center text-capitalize mx-auto ml-auto bg-warning">view more</button></a>
+		</div>
+	</div>
+
+	</div>
+
+</section>
+
+
+<section>
+	<div  id="westindia" class="container bg-light">
+		<h3 class="text-capitalize text-center text-dark ml-auto mx-auto mt-4">famous tourist places in north-east india</h3>
+		<hr class="text-center bg-primary mx-auto ml-auto w-50">
+
+		<div class="row bg-light">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\cher.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">cherapunji</p><a>
+
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\shil.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">shilong</p></a>
+			</div>
+			<div  class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\doo3.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">dooars</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\agar1.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">agartalla</p></a>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\lun.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">lunglei</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\sib3.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">sibsagar</p></a>
+			</div>
+		
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\kur.jpg" class="img-fluid">
+				</div>
+				<a href=""><p class="text-center">kurseong</p></a>
+			</div>
+			<div class="col-lg-3 col-md-3 col-3 mt-4 mx-auto ml-auto">
+				<div class="zoom">
+				<img src="images\gop.jpg" class="img-fluid">
+				</div>
+				<a href="#"><p class="text-center">gopalpur</p></a>
+			</div>
+			<button class=" btn text-center text-capitalize mx-auto ml-auto bg-warning">view more</button>
+		</div>
+	</div>
+
+	</div>
+
+</section>
+
+</body>
+</html>

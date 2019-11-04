@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    		 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    		 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+
+
+    		 <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+  				.zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+          }
+          h1
+			{
+ 			font-family: 'Sacramento', cursive;
+			}
+			 h2
+			{
+ 			font-family: 'Crimson Text', serif;
+			}
+			 h4
+			{
+ 			font-family: 'Crimson Text', serif;
+			}
+			p
+{
+font-family: 'Crimson Text', serif;
+}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+.nav-item:hover
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+			<div class="container-fluid badge-light" style="height: 60px;width: 100% ;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form class="my-auto">
+            <input type="text" name="search hotel" style ="height:30px" placeholder="search place" >
+            <button class=" " style="background-color: #76D7C4" >search</button>
+           </form>
+         </div>
+        
+      </div>
+    </div>  
+	<section class="sticky-top">
+	<ul id="des1" class="nav  ml-auto text-light bg-light  sticky-top"  style="background-color: white ;border-bottom: 4px solid grey;  border-top: 1px solid red;height: 100px">
+
+
+				<li class="nav-item my-auto ">
+   					 <a class="nav-link text-dark" href="index.html" style="font-weight: bold;">home</a>
+ 			    </li>
+  				<li class="nav-item my-auto">
+   					 <a class="nav-link text-dark" href="popularcities.html" style="font-weight: bold;">popular cities</a>
+ 			    </li>
+          		<li class="nav-item my-auto">
+             		<a class="nav-link text-dark" href="touristplace.html" style="font-weight: bold;">tourist places</a>
+          		</li>
+          		
+ 			    <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" href="#" style="font-weight: bold;">hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item active my-auto">
+    				<a class="nav-link text-dark" href="popularstates.html" style="font-weight: bold;">popular states</a>
+  			   </li>
+  			   <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" href="#" style="font-weight: bold;">login</a>
+  			   </li>
+           <li class="nav-item my-auto">
+            <a class="nav-link text-dark" href="contact.html" style="font-weight: bold;">contact us</a>
+           </li>
+           <div class="dropdown my-auto ">
+         <button class="btn  dropdown-toggle bg-light"  id="dropdownMenuButton" data-toggle="dropdown"   style="font-family: 'Cinzel', serif; ">
+            Catogaries
+          </button>
+         <div class="dropdown-menu my-auto" style="background-color: white;" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item text-warning" href="hillstation.html">hill station</a>
+            <a class="dropdown-item text-warning" href="honeymoon.html">Honeymoon destination</a>
+          <a class="dropdown-item text-warning" href="summer.html">Summer destination</a>
+           <a class="dropdown-item text-warning" href="winter.html">Winter destination</a>
+
+        <a class="dropdown-item text-warning" href="temple.html">famous temples </a>
+        <a class="dropdown-item text-warning" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+  			     
+			</ul>
+		</section>
+    <section>
+      <div class="container-fluid " style="width: 100%;height: 250px">
+       
+          
+        <div id="demo" class="carousel slide" data-ride="carousel">
+<div class="row">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <img src="images\hon5.jpg" alt="goa" class="img-fluid" style="height: 300px; width: 100%">
+      <div class="carousel-caption">
+   
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\hon2.jpg" alt="Kerela"  class="img-fluid" style="height: 300px; width: 100%">
+      <div class="carousel-caption">
+  
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\hon6.jpg" alt="taj mahal" class="img-fluid" style="height: 300px; width: 100%">
+      <div class="carousel-caption">
+    
+  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+
+      
+    </div>
+  </div>
+</div>
+
+     
+    </section>
+
+
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 350px">
+				<h2 class="text-center text-capitalize " style="color: black;font-weight: bold ;margin-top: 100px">here some famouse honeymoon destination in india</h2>
+				<hr class="w-50 bg-success text-center">
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn1.jpg" >  <img class="card-img-top" src="images\hmn1.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Cherrapunji</h4>
+              <p class="card-text">Although Cherrapunji owns a coveted place in travellers’ diaries, many of them don’t know it lodges an unusual facet extending a good time to honeymoon couples in an exemplary way. Mawsmai waterfalls, acting as a cascade amidst the greenery stops your breath for a second by which it is considered as one of the best waterfalls in the world.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn2.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Udaipur</h4>
+                 <p class="card-text">A spectacular city of lakes, Udaipur is a major tourist destination in India. Lying amidst the hills, this place is bestowed with an enticing panorama, that will allure innumerable nature lovers. A lot of honeymoon couples choose this ‘White City’ as a romantic getaway. Honeymoon in Udaipur is the perfect way to explore the city and admire its beauty in a relaxed way</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn3.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Jaisalmer</h4>
+                    <p class="card-text">Honeymoon in Jaisalmer is truly a hearty affair! Located right at the heart of the great Thar Desert, honeymoon in the ‘Golden City’ is an awe striking plan.Explore the unusual beauty of this place on a thrilling camel safari. Jaisalmer is an abode to several magnificent Havelis and Forts, which will add a royal touch to your honeymoon</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+
+		<section>
+			<div class="container text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn4.jpg">  <img class="card-img-top" src="images\hmn4.jpg" alt="Card image"  style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Rishikesh</h4>
+              <p class="card-text">If living life on the edge excites both you and your other half, no other destinations in India can replace the charm and appeal of Rishikesh. Home to some of the strenuous treks, gruesome rapids, adventurous camping and several thrilling activities, and some most thrilling places to visit, every bit of this city will make your honeymoon an enthralling experience for both of you!</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn5.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Kovalam</h4>
+                 <p class="card-text">A quaint town full of beaches located in Thiruvananthapuram in Kerala is Kovalam. This place lies in close proximity to the Arabian Sea and is blessed with a perfect environment to be a honeymoon destination. The mouthwatering sea food, the ayurvedic massages, the shallow waters make it an ideal resort for  the newly weded.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn6.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Andman nicobar</h4>
+                    <p class="card-text">The Andaman and Nicobar Islands, one of the seven union territories of India, are a group of islands located where the Bay of Bengal and Andaman Sea meet. Spend your honeymoon on these islands and get lost in its romantic aura.Explore your partner’s adventurous side at Andaman. Indulge in watersports like snorkelling and scuba diving. The mesmeric world under these waters will leave you both hypnotised</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+
+			<section>
+			<div class="container text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn7.jpg">  <img class="card-img-top" src="images\hmn7.jpg" alt="Card image"  style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Alleppey</h4>
+              <p class="card-text">Alleppey is one of the most beautiful backwater honeymoon destinations in India. Experience your honeymoon amidst the exquisiteness of nature and feel royal living on the houseboats with shining wooden floors and luxurious amenities.Cherish the simple joys of life engulfed in those mesmeric creations of God and the melodies of the nature.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn8.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Chikmagalur</h4>
+                 <p class="card-text">Oh, the coolest clouds touching the evergreen hill tops in Chikmagalur make it a dreamlike destination. A stupendous hill station possesses the perfect samples for the getaway options, honeymoon couples or soon to be married pairs seek to enjoy. Also, considering the unbeatable serenity prevailed in Chikmagalur, it is no surprise to see quite a large number or resorts and homestays here.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn9.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Darjeeling</h4>
+                    <p class="card-text">As you witness the sun rising over the horizon from the Tiger Hills, promise a bond that will make both of you love each other even more than yesterday! Caress and pamper the honeymoon trip with stunning views of the Himalayas, Mt Everest and the enthralling Kanchenjunga Peak</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+
+			<section>
+			<div class="container text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn10.jpg">  <img class="card-img-top" src="images\hmn10.jpg" alt="Card image"  style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Srinagar</h4>
+              <p class="card-text">The houseboats and the Shikharas on those shimmering lakes and the mesmerising mughal gardens make Srinagar a beloved destination for honeymooners.  The glistening snow capped hills during the winters and the colorful summers, rightly tags Srinagar a paradise on earth. </p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn11.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Jodhpur</h4>
+                 <p class="card-text"> Step into the wonderful bond of marriage with a candid honeymoon trip to the ‘Blue City‘ Jodhpur and curate some of the most loved moments of your life! Like the openness of the Thar Desert, open your heart to your partner and make each other feel loved amidst the romantic sands of Jodhpur.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn12.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Ranthambhor</h4>
+                    <p class="card-text">Unlike others, if you and your partner are inclined towards the nature or the fascinating wildlife, you must plan your honeymoon in Ranthambore National Park. The enthralling wildlife safaris, tracing the beasts and moments in the luxury camps will surely make it for an amazing honeymoon trip.</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+
+    <section>
+      <div class="container mt-4 text-center text-capitalize" style="margin-top: 400px">
+        
+      <div class="row mx-auto">
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn13.jpg">  <img class="card-img-top" src="images\hmn13.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+                 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Jaipur</h4>
+              <p class="card-text">Let the essence of royalty and lavishness cuddle up your honeymoon trip! Make your partner feel your unconditioned love within the colourful lanes of the Pink City Jaipur and strengthen the bond of love and affection between the two of you</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn14.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                  <a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Gulmarg</h4>
+                 <p class="card-text">Gulmarg is a hill station,situated in Baramula district Jammu and Kashmir. The town is based in the Pirpanjal range in the western the Himalayas.The snowy meadows of Gulmarg await you to bring all your romantic emotions to life! The alluring charm of the snow-clad hills and valleys of this hill station outlooks any other honeymoon destinations in India.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn15.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                      <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Kumarakom</h4>
+                    <p class="card-text">After all the festive celebrations of a big-fat wedding, both of you really deserve to relax away from everyone! Sail through the silent backwaters of Kumarakom, relax in a houseboat and blend your honeymoon with plenitude of relaxing moments along with the tenderness of love and romance!</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+            <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+       </div>
+        
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container text-center text-capitalize" style="margin-top: 10px">
+        
+      <div class="row mx-auto">
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn16.jpg">  <img class="card-img-top" src="images\hmn16.jpg" alt="Card image"  style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+                 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Ooty</h4>
+              <p class="card-text">Embraced by the fascinating beauty of the Nilgiri Hills and adorned with pleasant hilly climate and stunning beauty, Ooty in undoubtedly one of the best honeymoon destinations in the country. Quaint, yet mesmerising, honeymoon in Ooty is all about cuddling each other in the lap of nature!</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn17.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                  <a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Kodaikanal</h4>
+                 <p class="card-text">Don’t do anything, but spend loving and caressing moment with each other on your honeymoon trip! Appreciate each and every moment, embrace the love between the two of you and mark the most romantic beginning of your life in the enchanting locales of Kodaikanal.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn18.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                      <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Kanyakumari</h4>
+                    <p class="card-text">A point, where the land ends and begins the mighty ocean, Kanyakumari in Tamil Nadu is amongst the most sought after honeymoon places in India. The lands might end here, but happiness, togetherness, love, peace and prosperity begins from here!</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+            <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+       </div>
+        
+      </div>
+
+    </section>
+
+      <section>
+      <div class="container text-center text-capitalize" style="margin-top: 10px">
+        
+      <div class="row mx-auto">
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\hmn19.jpg">  <img class="card-img-top" src="images\hmn19.jpg" alt="Card image"  style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+                 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Lakshdweep</h4>
+              <p class="card-text">Lakshadweep is a small group of islands situated approximately  200 to 440 KM off the South Western coast of Kerala. These islands are one of the most exquisite and romantic destinations in India. Spend some quality time with your better half in this exotic destination</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn20.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                  <a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Shimla</h4>
+                 <p class="card-text">Honeymoon is not just about traveling to a distant place but also about knowing your partner. So what could be a  better destination than Shimla,the capital city of Himachal Pradesh. Situated amidst  the Himalayas, Shimla lies at an elevation of 2205 M above sea level with the places you can’t afford to miss.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn21.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                      <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Manali</h4>
+                    <p class="card-text">Manali is a hill station located at the northern side of Himachal Pradesh in India. Based close to River Beas, Manali proffers an alluring panorama to its visitors. Plan your honeymoon at Manali and begin the new journey of life embraced by these mesmeric creations</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+            <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+       </div>
+        
+      </div>
+
+    </section>
+
+      <section>
+      <div class="container text-center text-capitalize" style="margin-top: 10px">
+        
+      <div class="row mx-auto mb-5">
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\tp22.jpg">  <img class="card-img-top" src="images\hmn22.jpg" alt="Card image"  style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+                 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Leh Laddakh</h4>
+              <p class="card-text">When love gets blended with the allurement of adventure, your honeymoon trip is sure to be one of the most cherishable phases of your life! And if both of you happen to be adventurous souls, Leh-Ladakh will bring you closer with all its fascinating offerings.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn23.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                  <a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Mussoorie</h4>
+                 <p class="card-text">Mussoorie is located close to Dehradun, in Uttarakhand. Get soaked amidst the captivating beauty of the ‘Queen of Hills’ that is based at an elevation of 1826 M, above the sea level.Visit the gorgeous waterfalls, take a cable-car ride over the stunning valleys, spend pleasant moments with each other while boating in a spectacular lake; what more can you wish for in a honeymoon trip to Mussoorie!</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\hmn24.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                      <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Mashobra</h4>
+                    <p class="card-text"> If the fascinating beauty of the wildlife makes both of your hearts skip a beat, the Sunderbans Tiger Reserve in West Bengal must be your honeymoon destination. Natural home to the Royal Bengal Tigers and several other exotic wild species, you will enjoy every single moment in the Sunderbans.</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+            <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+       </div>
+        
+      </div>
+
+    </section>
+    <section>
+      <div class="container  mt-3" style="height: 150px;height: 100%; background-color: black">
+        
+      </div>
+    </section>
+
+
+</body>
+</html>

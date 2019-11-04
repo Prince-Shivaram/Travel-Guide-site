@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	      <link rel="stylesheet" href="style.css">
+
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    		 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    		  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		.nav-item:hover
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+		
+		.zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+          }
+
+.jumbotron {
+  position:relative;
+  overflow:hidden;
+}
+
+.jumbotron .container {
+  position:relative;
+  z-index:2;
+  
+  background:rgba(0,0,0,0.2);
+  padding:2rem;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius:3px;
+}
+
+.jumbotron-background {
+  object-fit:cover;
+  font-family: 'object-fit: cover;';
+  position:absolute;
+  top:0;
+  z-index:1;
+  width:100%;
+  height:40%;
+  opacity:0.5;
+}
+
+img.blur {
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+h1
+{
+ font-family: 'Sacramento', cursive;
+}
+p
+{
+	font-family: 'Barlow Condensed', sans-serif;
+}
+input[type=email], input[type=password],input[type=name] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+   
+    cursor: pointer;`
+  
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 12px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+        }
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.nav-item:hover
+{
+  
+  margin-top: 5px;
+  text-decoration: underline;
+  text-decoration-color: red;
+
+}
+	</style>
+	<script type="text/javascript">
+		 var count = 2;
+function run() {
+var un = document.myform.email.value;
+var pw = document.myform.pass.value;
+var valid = false;
+var unArray = ["piyush@pikashu.com", "karan@pikashu.com", "shubham@pikashu.com"];  // as many as you like - no comma after final entry
+var pwArray = ["piyush", "karan", "shubham"];  // the corresponding passwords;
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+if (valid ) {
+  if(un=="piyush@pikashu.com" && pw=="piyush")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika.html";
+return false;
+}
+else if(un=="karan@pikashu.com" && pw=="karan")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika1.html";
+return false;
+}
+if(un=="shubham@pikashu.com" && pw=="shubham")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika2.html";
+return false;
+}
+}
+var t = " tries";
+if (count == 1) {t = " try"}
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+}
+
+</script>
+<!--script for login function -->
+    <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+  </script>      
+
+<!--script for signup function -->
+<script>
+    // Get the modal
+  var hi = document.getElementById('id02');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == hi) {
+        modal.style.display = "none";
+    }
+  }
+	</script>
+</head>
+<body>
+	<div class="container-fluid badge-light" style="height: 60px;width: 100%;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form class="my-auto">
+            <input type="text" style="height: 30px" name="search hotel" placeholder="search place" >
+            <button class="" style="background-color: #76D7C4" >search</button>
+           </form>
+         </div>
+        
+      </div>
+    </div>
+<section class="sticky-top">
+	<ul id="des1" class="nav bg-light ml-auto text-light my-auto sticky-top "  style="height: 100px ;border-bottom: 4px solid grey;  border-top: 1px solid red">
+				<li class="nav-item my-auto " >
+   					 <a class="nav-link text-dark " style="font-size: 15px;" href="index.html" style="font-weight: bold;">home</a>
+ 			    </li>
+  				<li class="nav-item active  my-auto">
+   					 <a class="nav-link text-dark" style="font-size: 15px; font-weight: bold;" href="popularcities.html" style="font-weight: bold;">popular cities</a>
+ 			    </li>
+          		<li class="nav-item my-auto ">
+             		<a class="nav-link text-dark" style="font-size: 15px;" href="touristplace.html" style="font-weight: bold;">tourist places</a>
+          		</li>
+          		
+ 			    
+ 			    <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" style="font-size: 15px;" href="#" style="font-weight: bold;">hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item my-auto">
+    				<a class="nav-link text-dark" style="font-size: 15px; " href="popularstates.html" style="font-weight: bold;">popular states</a>
+  			   </li>
+  			  
+           <li class="nav-item my-auto">
+            <a class="nav-link text-dark" style="font-size: 15px;" href="contact.html" >contact us</a>
+           </li>
+           <div class="dropdown my-auto">
+         <button class="btn  dropdown-toggle bg-light my-auto"  id="dropdownMenuButton" data-toggle="dropdown"   style="font-family: 'Cinzel', serif;font-size: 15px;">
+            Catogaries
+          </button>
+         <div class="dropdown-menu" style="background-color: white;" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item text-warning" href="hillstation.html">hill station</a>
+            <a class="dropdown-item text-warning" href="honeymoon.html">Honeymoon destination</a>
+          <a class="dropdown-item text-warning" href="summer.html">Summer destination</a>
+           <a class="dropdown-item text-warning" href="winter.html">Winter destination</a>
+
+        <a class="dropdown-item text-warning" href="temple.html">famous temples </a>
+        <a class="dropdown-item text-warning" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+
+        <li class="nav-item my-auto mt-auto" style="margin-left: 350px;font-size: 15px;">
+        	        <img src="p.png" alt="Avatar" class="avatar img-fluid" style="height: 30px;width: 25px;margin-top: 15px;margin-left: 10px" >
+
+            <a class="nav-link text-dark my-auto mt-auto"  style="cursor: pointer;  margin-left: -10px" onclick="document.getElementById('id01').style.display='block'" align="center" >Login</a>
+           </li>
+  			    
+			</ul>
+		
+</section>
+<div border="0" cellspacing="0" cellpadding="30" width="60%" style="margin-center">
+    <br>
+  <div id="id01" class="modal"  ><br>
+        
+  
+  <form method="post" name="myform" class="modal-content animate" >
+    <div class="imgcontainer" width="400">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+    
+      <img src="p.png" alt="Avatar" class="avatar" >
+    </div>
+
+    <div class="container"style="background-color:#f1f1f1" >
+  
+      <label for="email">Email</label><br/>
+    <input type="email"  name="email" value="" autocomplete="off" autofocus="" ><br/>
+    <label for="password">Password</label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+    <button type="button" class="bg-success" onclick="run()" value="Login">Login</button>
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember">  Remember me
+      </label><br>
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" >Forgot <a href="forget_pass.html">password? </a> </span>
+      <span class="psw" >Forgot <a href="forget_pass.html">SignUp </a> </span>
+          <hr width=100% >
+       
+    </div>
+  </form>
+    </div>
+    
+</div>
+
+
+ <!--body for book trip-->
+
+
+<div id="id02" class="modal"  ><br>  
+   
+    <form method="post" name="myform1" class="modal-content animate" ><br><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+    <div class="container"style="background-color:#f1f1f1 ; width: 80%" >
+          <h3 class="text-center">Hey!you are registering for trip </h3><hr>
+    <label for="name" >Name</label><br>
+        <input type="name"  name="name" value="" ><br/>
+    <label for="email">Email</label><br/>
+    
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Total Person </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Source Station </label><br/>
+      <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Destination </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Adress </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Contact No. </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+    <label for="gender">Gender</label><br/><br/>
+    <input type="radio" id="gender" name="gender" style="width:22%;height:22px;>
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="gender" style="width:22%;height:22px;>
+    <label for="gender">Female</label><br/><br/>
+    <label for="Dob">Date of birth</label><br/><br/>
+    <select id="Day" size="1" style="width:20%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Day">Day</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    </select>
+    <select id="month" size="1" style="width:25%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Month">Month</option>
+    <option value="Jan">Jan</option>
+    <option value="Feb">Feb</option>
+    <option value="Mar">Mar</option>
+    <option value="Apr">Apr</option>
+    <option value="May">May</option>
+    <option value="Jun">Jun</option>
+    <option value="Jul">Jul</option>
+    <option value="Aug">Aug</option>
+    <option value="Sep">Sep</option>
+    <option value="Oct">Oct</option>
+    <option value="Nov">Nov</option>
+    <option value="Dec">Dec</option>
+    </select>
+    <select id="Year" size="1" style="width:20%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Year">Year</option>
+    <option value="2008">2018</option>
+    <option value="2007">2017</option>
+    <option value="2006">2016</option>
+    <option value="2005">2015</option>
+    <option value="2004">2014</option>
+    <option value="2003">2013</option>
+    <option value="2002">2012</option>
+    <option value="2001">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2002">2002</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+    <option value="1999">1999</option>
+    <option value="1998">1998</option>
+    <option value="1997">1997</option>
+    <option value="1996">1996</option>
+    <option value="1995">1995</option>
+    <option value="1994">1994</option>
+    <option value="1993">1993</option>
+    <option value="1992">1992</option>
+    <option value="1991">1991</option>
+    <option value="1990">1990</option>
+    <option value="1989">1989</option>
+    <option value="1988">1988</option>
+    <option value="1987">1987</option>
+    <option value="1986">1986</option>
+    <option value="1985">1985</option>
+    <option value="1984">1984</option>
+    <option value="1983">1983</option>
+    <option value="1982">1982</option>
+    <option value="1981">1981</option>
+    <option value="1980">1980</option>
+    </select>
+    <br>
+        <button type="button" class="mt-1 bg-success" onclick="k()" value="SignUp"  >book</button>  <br>
+      <button type="button" class="bg-danger mt-2" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+       
+    </div>
+</form>
+      
+    </div>
+
+<section>
+	<div class="jumbotron jumbotron-fluid bg-dark " style="margin-top: -30px">
+  
+ 		 <div class="jumbotron-background">
+    		<img src="images\city1.jpg" class="blur ">
+  		 </div>
+
+  		<div class="container text-white">
+
+    	<h1 class="display-4 text-light">Welcome to india!</h1>
+    	<p class="lead text-capitalize">We are providing you list of famous cities of india</p>
+    	<hr class="my-4">
+    	<p class="lead text-capitalize">below are the most famous cities of india.if you wish to go on tour ,we will give you the suggestion of best tourist cities in india </p>
+    	
+
+  		</div>
+	</div>
+
+</section>
+
+
+<section>
+<div class="container mt-2 mb-2">
+	<div class=" row mt-2 mb-2">
+		<div class="col-lg-6 col-md-6 col-6 my-auto">
+			<div class="zoom">
+			<img src="images\mumbai3.jpg" style="width: 750px;height: 250px" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-6">
+			<h4 class="text-capitalize text-center">mumbai</h4>
+			<hr class=" w-25 text-warning bg-warning">
+			<p>
+				Mumbai is the capital city of the Indian state of Maharashtra. As of 2011 it is the most populous city in India with an estimated city proper population of 12.4 million. The larger Mumbai Metropolitan Region which includes nearby areas like Navi Mumbai, Thane, Kalyan, Bhiwandi, Panvel, Virar, Pen, Ulhasnagar, Ambarnath, Dombivli, Karjat, Alibag, Vasai, Matheran and Khopoli is the second most populous metropolitan area in India and one of the most populous in the world, with a population of over 25 million. Mumbai Megalopolis, the area covering the golden triangle of Maharashtra which comprises Mumbai Metropolitan Region, Pune Metropolitan Region and Nashik Metropolitan Region has a population of around 50 million making Mumbai Megalopolis the most populated urban area in the world
+			</p>
+			<button class="btn bg-warning text-dark"  onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#58F572,#B7F7C2);  ">book trip</button>
+			<a href="mumbaitp.html"><button class="btn mx-auto text-capitalize text-dark" style="background-image: linear-gradient(to right,#F0A3B9,#F4386E);  "> tourist places</button></a>
+
+		</div>
+	</div>
+	<div class=" row">
+		<div class="col-lg-6 col-md-6 col-6 my-auto">
+			<div class="zoom">
+			<img src="images\banglore2.jpg"  style="width: 750px;height: 250px" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-6">
+			<h4 class="text-capitalize text-center mt-1">banglore</h4>
+			<hr class=" w-25 text-warning bg-warning">
+			<p>
+			Bangalore, officially known as Bengaluru, is the capital of the Indian state of Karnataka. It has a population of over ten million, making it a megacity and the third-most populous city and fifth-most populous urban agglomeration in India. It is located in southern India, on the Deccan Plateau at an elevation of over 900 m (3,000 ft) above sea level, which is the highest among India's major cities.[16] Its multi-ethnic, multi-religious, and cosmopolitan character is reflected by its more than 1000 temples and Hindu mandirs, 400 Islamic mosques, 100 Christian churches, 40 Jain derasars, three Sikh gurdwaras, two Buddhist viharas and one Parsi fire temple located in an area of 741 km² of the metropolis. The religious places are further represented by the proposed Chabad of the Jewish community. 
+			</p>
+			<button class="btn bg-warning text-dark"  onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#58F572,#B7F7C2);  ">book trip</button>
+			<button class="btn bg-warning mx-auto text-capitalize text-dark" style="background-image: linear-gradient(to right,#F0A3B9,#F4386E);  "> tourist places</button>
+
+
+		</div>
+	</div>
+	<div class=" row">
+		<div class="col-lg-6 col-md-6 col-6 my-auto">
+			<div class="zoom">
+			<img src="images\kolkata3.jpg"  style="width: 750px;height: 250px" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-6">
+			<h4 class="text-capitalize text-center mt-2">kolkata</h4>
+			<hr class=" w-25 text-warning bg-warning">
+			<p>
+			Kolkata, also known as Calcutta, is the capital of the Indian state of West Bengal. According to the 2011 Indian census, it is the seventh most populous city; the city had a population of 4.5 million, while the suburb population brought the total to 14.1 million, making it the third-most populous metropolitan area in India. Kolkata Megalopolis which comprises Kolkata Metropolitan Area and its surrounding areas Presidency division, Medinipur division and Burdwan division has a population of over 65 millions making Kolkata Megalopolis one of the largest populated areas in the world. Located on the east bank of the Hooghly River approximately 80 kilometres  west of the border with Bangladesh. 
+			</p>
+			<button class="btn bg-warning text-dark"  onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#58F572,#B7F7C2);  ">book trip</button>
+			<button class="btn bg-warning mx-auto text-capitalize text-dark" style="background-image: linear-gradient(to right,#F0A3B9,#F4386E);  "> tourist places</button>
+
+
+		</div>
+	</div>
+	<div class=" row mt-4">
+		<div class="col-lg-6 col-md-6 col-6 mt-5 my-auto mt-auto ">
+			<div class="zoom">
+			<img src="images\chennai6.jpg"  style="width: 750px;height: 250px" class="img-fluid my-auto">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-6">
+			<h4 class="text-capitalize text-center mt-2">chennai</h4>
+			<hr class=" w-25 text-warning bg-warning">
+			<p>
+			Chennai is the capital of the Indian state of Tamil Nadu. Located on the Coromandel Coast off the Bay of Bengal, it is the biggest cultural, economic and educational centre of south India. According to the 2011 Indian census, it is the sixth-most populous city and fourth-most populous urban agglomeration in India. The city together with the adjoining regions constitute the Chennai Metropolitan Area, which is the 36th-largest urban area by population in the world.Chennai is among the most-visited Indian cities by foreign tourists. It was ranked the 43rd-most visited city in the world for the year 2015.The Quality of Living Survey rated Chennai as the safest city in India.  
+			</p>
+			<button class="btn bg-warning text-dark"  onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#58F572,#B7F7C2);  ">book trip</button>
+			<button class="btn bg-warning mx-auto text-capitalize text-dark" style="background-image: linear-gradient(to right,#F0A3B9,#F4386E);  "> tourist places</button>
+
+
+		</div>
+	</div>	
+
+		<div class=" row mt-5">
+		<div class="col-lg-6 col-md-6 col-6 mt-auto my-auto " >
+			<div class="zoom">
+			<img src="images\jaipur3.jpg"  style="width: 750px;height: 250px" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-6">
+			<h4 class="text-capitalize text-center mt-2">jaipur</h4>
+			<hr class=" w-25 text-warning bg-warning">
+			<p>
+			Jaipur  is the capital and the largest city of the Indian state of Rajasthan. As of 2011, the city had a population of 3.1 million, making it the tenth most populous city in the country. Jaipur is also known as the Pink City, due to the dominant color scheme of its buildings. It is located 268 km (167 miles) from the national capital New Delhi.
+			Jaipur was founded in 1727 by the Rajput ruler Jai Singh II, the ruler of Amer, after whom the city is named. It was one of the earliest planned cities of modern India, designed by Vidyadhar Bhattacharya.[11] During the British Colonial period, the city served as the capital of Jaipur State. After independence in 1947, Jaipur was made capital of the newly-formed state of Rajasthan.
+			</p>
+			<button class="btn bg-warning text-dark"  onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#58F572,#B7F7C2);  ">book trip</button>
+			<button class="btn bg-warning mx-auto text-capitalize text-dark"style="background-image: linear-gradient(to right,#F0A3B9,#F4386E);  "> tourist places</button>
+			</div>
+		</div>	
+		<div class=" row mt-5">
+		<div class="col-lg-6 col-md-6 col-6 my-auto mt-5">
+			<div class="zoom">
+			<img src="images\delhi2.jpg"  style="width: 750px;height: 250px" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-6 ">
+			<h4 class="text-capitalize text-center mt-2">new delhi</h4>
+			<hr class=" w-25 text-warning bg-warning">
+			<p>
+			New Delhi  is an urban district of Delhi which serves as the capital of India and seat of all three branches of the Government of India.
+			The foundation stone of the city was laid by Emperor George V during the Delhi Durbar of 1911. It was designed by British architects, Sir Edwin Lutyens and Sir Herbert Baker. The new capital was inaugurated on 13 February 1931, by Viceroy and Governor-General of India Lord Irwin.
+			Although colloquially Delhi and New Delhi are used interchangeably to refer to the National Capital Territory of Delhi (NCT), these are two distinct entities, with New Delhi forming a small part of Delhi. The National Capital Region is a much larger entity comprising the entire NCT along with adjoining districts in neighboring states.
+			</p>
+			<button class="btn bg-warning text-dark"  onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#58F572,#B7F7C2);  ">book trip</button>
+			<button class="btn bg-warning mx-auto text-capitalize text-dark" style="background-image: linear-gradient(to right,#F0A3B9,#F4386E);  "> tourist places</button>
+			</div>
+			<button class="btn text-capitalize bg-danger mx-auto mt-5" style="background-image: linear-gradient(to right,#9686F2,#BAB0F5);  "> view more</button>
+
+		</div>
+
+		<hr class="w-50 text-center bg-primary">
+</div>
+</section>
+
+<section>
+	<div class="container-fluid bg-primary">
+		<h2 class="text-center text-capitalize text-warning" > for more querry call us</h2>
+		<h5 class="text-center text-capitalize text-warning">+919877744175</h5>
+
+
+	</div>
+
+</section>
+<section>
+	<div class="modal-footer bg-dark text-light">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit illum eveniet error dolorem iusto, nulla autem! Id, neque labore tempora fugiat consequuntur dolores aliquam earum accusamus, totam nulla nisi.</p>
+	</div>
+</section>
+			
+
+</body>
+</html>

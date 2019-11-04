@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+                  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  			<style type="text/css">
+  			#demo{
+            font-family: 'Nanum Myeongjo', serif;
+          }
+          .container
+          {
+            font-family: 'Nanum Myeongjo', serif;
+          }
+  			.jumbotron img
+  				{
+  					width:100%;
+  					height:100%;
+            size: cover;
+          
+
+  				}
+          .zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+
+          }
+           
+          h1
+			{
+ 			font-family: 'Sacramento', cursive;
+			}
+			 h2
+			{
+ 			font-family: 'Crimson Text', serif;
+			}
+			 h4
+			{
+ 			font-family: 'Crimson Text', serif;
+			}
+			p
+{
+font-family: 'Crimson Text', serif;
+}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+
+ </style>
+
+</head>
+<body>
+	<div class="container-fluid badge-light" style="height: 60px;width: 100% ;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form >
+            <input type="text" name="search hotel" placeholder="search place" >
+            <button class=" " style="background-color: #76D7C4" >search</button>
+           </form>
+         </div>
+        
+      </div>
+    </div>
+    <ul id="des1"class="nav  ml-auto text-light  sticky-top " style="background-color: white ;border-bottom: 4px solid grey;  border-top: 1px solid red" >
+				  <li class="nav-item  active ">
+             <a class="nav-link text-dark" href="index.html" style="font-weight: bold; ">home</a>
+          </li>
+  				<li class="nav-item ">
+   					 <a class="nav-link text-dark" href="popularcities.html" style="font-weight: bold;">popular cities</a>
+ 			    </li>
+          <li class="nav-item ">
+             <a class="nav-link text-dark" href="touristplace.html" style="font-weight: bold;">tourist places</a>
+          </li>
+          
+ 			    <li class="nav-item">
+    				<a class="nav-link text-dark" href="#" style="font-weight: bold;">hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item">
+    				<a class="nav-link text-dark" href="popularstates.html" style="font-weight: bold;">popular states</a>
+  			   </li>
+  			   
+           <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html" style="font-weight: bold;">contact us</a>
+           </li>
+           <div class="dropdown ">
+         <button class="btn  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown"style="font-family: 'Cinzel', serif; background-color:white">
+            Catogaries
+          </button>
+         <div class="dropdown-menu text-success"  aria-labelledby="dropdownMenuButton" style="background-color: white;">
+           <a class="dropdown-item  text-success "  href="hillstation.html">hill station</a>
+            <a class="dropdown-item  text-success" href="honeymoon.html">Honeymoon destination</a>
+          <a class="dropdown-item  text-success" href="summer.html">Summer destination</a>
+           <a class="dropdown-item  text-success" href="winter.html">Winter destination</a>
+
+        <a class="dropdown-item  text-success" href="temple.html">famous temples </a>
+        <a class="dropdown-item  text-success" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+        </div>
+  			   
+    </ul>
+    <section>
+    	<div class="container" style="height: 45px;width: 100%">
+    		<div class="row text-center text-capitalize" style="margin-left: 100px;margin-right: 100px;margin-top: 30px">
+    			<button class="btn mr-1 bg-light" style="border:1px solid red">haryana</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">punjab</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">Delhi</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">Uttar pradesh</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">Uttarakhand</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">Jammu & Kashmir</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">Laddakh</button>
+    			<button class="btn mr-1 bg-light"  style="border:1px solid red">Himachal pradesh</button>
+
+
+    			
+    		</div>
+    	</div>
+    </section>
+    <section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 150px">
+				<h2 class="text-center text-capitalize " style="color: black;font-weight: bold ;margin-top: 100px">here is famous tourist place in north india</h2>
+				<hr class="w-50 bg-success text-center">
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\laddakh1.jpg" >  <img class="card-img-top" src="images\laddakh1.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Laddakh</h4>
+              <p class="card-text">A land like no other with superabundance of attractions to visit and phantasmagoric and fabulous landscapes, amazing people and culture, Ladakh is truly a heaven on Earth.</p>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\delhincr.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Delhi</h4>
+                 <p class="card-text">From historical monuments to crowded shopping malls, from Mughal gardens to Delhi University campus, the capital city has multiple personalities making it 'The good, the bad and the ugly.The Capital city of India and the base location to explore North India, Delhi is considered to be the city with a heart.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\natpk.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">corbet national park</h4>
+                    <p class="card-text">Corbett National Park, set amidst the foothills of Himalayas, houses a variety of flora and fauna including rare ones such as tigers and is a treat for wildlife enthusiasts and photographers.</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\risi3.jpg" >  <img class="card-img-top" src="images\risi3.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Rishikesh</h4>
+              <p class="card-text">Situated along the convergence of Ganga and Chandrabhaga, Rishikesh on the foothills of Himalayas is the hub of many ancient temples, popular cafes, yoga ashrams and adventure sports.Rishikesh is the most beautiful blend of spiritual and adrenaline pumping experiences. With Whitewater Rafting industry growing and a number of camping and cafe spots springing up, Rishikesh has grown immensely as a favourite, catering to people with different needs.</p>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\masoori1.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Mussorrie</h4>
+                 <p class="card-text">If your idea of the perfect holiday involves tranquil hills, untouched nature and a holiday experience that is unadulterated in the truest sense of the term, Mussoorie is the place you should be heading to. Nestled amidst the foothills of the Garhwal Himalayan ranges, Mussoorie, also known as Queen of The Hills, stands at an altitude of 7000 feet above sea level, and has a cool, pleasant climate throughout the year.</p>
+                <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\dharm1.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Dharmshala</h4>
+                    <p class="card-text">Dharamsala is famed as the holy residence of the Dalai Lama and houses the Tibetan monk in exile. Dharamsala is located in Kangra district at a distance of 18km fro Kangra City. The city is distinctively separated as upper and lower divisions with different altitudes. The lower division is the Dharamsala town itself whereas the upper division is popularly known as Mcleodganj.</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\kedar1.jpg" >  <img class="card-img-top" src="images\kedar1.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Kedarnath</h4>
+              <p class="card-text">Atop 3584 mts, this is one of the Char Dhams and one of the busiest pilgrim centres in the Garhwal Himalayas. It is believed that in order to evade the Pandavas, Lord Shiva hid himself in the form of a bull at Kedarnath, and when found by the Pandavas, he went further into the earth leaving the hump on the surface.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\gold.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Golden temple</h4>
+                 <p class="card-text">Home of the glorious Golden Temple, the iconic city of Amritsar, portrays the heroic character of the Punjab. A day in this peaceful city starts with the spiritual prayers from Gurudwaras. The original name of first the ancient lake, then of the temple complex, and later the surrounding city, meaning "pool of ambrosial nectar.".</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn "   style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid1.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Kasauli</h4>
+                    <p class="card-text">Located on the way from Chandigarh to Shimla, Kasauli is a hilly cantonment town which makes for an ideal peaceful holiday location, away from the rush..</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\nid2.jpg" >  <img class="card-img-top" src="images\nid2.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Almora</h4>
+              <p class="card-text">Cradled in the wilderness of Himalayan ranges, the sprawling town of Almora shaped like a horse-shoe is a hill station that boasts of a pre-British heritage and an adyllic vibe</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid3.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Dalhousie</h4>
+                 <p class="card-text">The tiny tinsel town Dalhousie tucked away in the lap of Himachal Pradesh is a piece of paradise for all the travellers. It boasts of old world charm, mesmerising natural landscape, pine-clad valleys, flower bedecked meadows, fast flowing rivers, magnificent misty mountains and some of the most spectacular views in the world</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid4.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Kufri</h4>
+                    <p class="card-text">Kufri in Shimla district, Himachal Pradesh is one of the most sought after holiday destinations, and more so for couples, because of its proximity to Shimla and relatively higher altitude which makes it a place with snow all through the winters.</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\nid5.jpg" >  <img class="card-img-top" src="images\nid5.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Gangotri</h4>
+              <p class="card-text">This pilgrimage destination situated in Uttarkashi is mostly famous for the four religious centers, or as they say, the Char Dham spots.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid6.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Nainitaal</h4>
+                 <p class="card-text">One of the most beautiful tourist destinations in Uttarakhand, Nainital, which is nestled amidst the Kumaon Hills, is a quaint hill station built around a uniquely shaped lake known as the 'Naini Lake' (thus contributing to its name Nainital). Also famously known as 'City of Lakes,' Nainital abounds in natural beauty, with its snow-capped hills and tranquil lakes lending it a nostalgic charm of its own.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid7.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Shimla</h4>
+                    <p class="card-text">Probably the most popular hill station in northern India, Shimla is the capital city of Himachal Pradesh famous for its Mall road, the Ridge, toy train etc. among honeymooners and families alike</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\nid8.jpg" >  <img class="card-img-top" src="images\nid8.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Bhimtal</h4>
+              <p class="card-text">Rested at a height of 1370m above the sea level, Bhimtal is spotted with temples lying amid the verdant mountains and a pristine blue lake. The ancient town of Bhimtal is a place to lie down under the shade of nature, close your eyes and experience serenity.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid9.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Kinnaur</h4>
+                 <p class="card-text">Kinnaur, also known as "Land of god" is about 235 Km from Shimla and is known for its serenity and beauty of the lush green and rocky mountainscape having Satluj, Baspa and Spiti river snaking through it.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid10.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Khajjiar</h4>
+                    <p class="card-text">Often referred to as 'mini-Switzerland of India', Khajjiar is a small town near Dalhousie which provides tourists a unique combination of forests, lakes and pastures.</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container mt-4 text-center text-capitalize" style="margin-top: 10px">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+          <a href="images\nid11.jpg" >  <img class="card-img-top" src="images\nid11.jpg" alt="Card image" style="height: 240px">
+          </a>
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+
+
+                <h4 class="card-title">Ranikhet</h4>
+              <p class="card-text">Ranikhet meaning Queen's farm, is a hill station developed by the Britishers around ancient temples, undulating Himalayan hills and forests.</p>
+              <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid12.jpg" alt="Card image"  style="height: 240px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Narkanda</h4>
+                 <p class="card-text">Surrounded by forests and woodlands, Narkanda is a quaint little town in Shimla district which is popular for skiing in winters.</p>
+                <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\nid13.jpg" alt="Card image"  style="height: 240px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Vaisno devi</h4>
+                    <p class="card-text">Located in Trikuta hills, 13 km from Katra at the height of 1560 m above sea level with bright clouds and thinning air, this town is the holy cave temple of Mata Vaishnodevi, with spirituality and vibrancy lingering in the atmosphere</p>
+                      <a href="#" class="btn btn-primary"style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</a>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+
+</body>
+</html>

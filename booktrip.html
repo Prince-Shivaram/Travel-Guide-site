@@ -1,0 +1,242 @@
+<html>
+	<head>
+		 	<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  			<style type="text/css">
+          #demo{
+            font-family: 'Nanum Myeongjo', serif;
+          }
+          .container
+          {
+            font-family: 'Nanum Myeongjo', serif;
+          }
+  			
+          .zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+          }
+  
+.carousel-inner img
+{
+  width:100%;
+  height: 85%;
+}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+#drop
+{
+  display: none;
+  list-style: none;
+}
+#drop:hover
+{
+  display: block;
+}
+h1
+{
+ font-family: 'Sacramento', cursive;
+}
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 5px 7px;
+  border: none;
+  cursor: pointer;
+  
+
+ 
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+
+  
+  border: 3px solid #f1f1f1;
+ 
+}
+
+/* Add styles to the form container */
+.form-container {
+ 
+  padding: 5px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 7px;
+ 
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 7px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+
+
+  		
+       
+  	</head>
+		<body>
+    
+
+      <div class="container-fluid " style="height: 60px;width: 100%;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form >
+            <input type="text" name="search hotel" placeholder="search place" >
+            <button class=" " style="background-color: #76D7C4" >search</button>
+           </form>
+          
+           
+         </div>
+        
+      </div>
+    </div>
+
+    
+			<ul id="des1"class="nav  ml-auto text-light bg-light sticky-top " style=";background-color:white;height: 50px;width: 100%;border-bottom: 4px solid grey; border-top: 1px solid red" >
+				  <li class="nav-item  active ">
+             <a class="nav-link text-dark" href="index.html" style="font-weight: bold; ">home</a>
+          </li>
+  				<li class="nav-item ">
+   					 <a class="nav-link text-dark" href="popularcities.html" style="font-weight: bold;">popular cities</a>
+ 			    </li>
+          <li class="nav-item ">
+             <a class="nav-link text-dark" href="touristplace.html" style="font-weight: bold;">tourist places</a>
+          </li>
+          
+ 			    <li class="nav-item">
+    				<a class="nav-link text-dark" href="#" style="font-weight: bold;">hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item">
+    				<a class="nav-link text-dark" href="popularstates.html" style="font-weight: bold;">popular states</a>
+  			   </li>
+  			   
+           <li class="nav-item">
+            <a class="nav-link text-dark" href="contact.html" style="font-weight: bold;">contact us</a>
+           </li>
+           <div class="dropdown ">
+         <button class="btn  dropdown-toggle bg-light"  id="dropdownMenuButton" data-toggle="dropdown"style="font-family: 'Cinzel', serif;">
+            Catogaries
+          </button>
+         <div class="dropdown-menu text-success"  aria-labelledby="dropdownMenuButton" style="background-color: white;">
+           <a class="dropdown-item   " style="color: #F62BD1 "  href="hillstation.html">hill station</a>
+            <a class="dropdown-item  "style="color: #F62BD1 " href="honeymoon.html">Honeymoon destination</a>
+          <a class="dropdown-item  "style="color: #F62BD1 " href="summer.html">Summer destination</a>
+           <a class="dropdown-item  "style="color: #F62BD1 " href="winter.html">Winter destination</a>
+
+        <a class="dropdown-item  "style="color: #F62BD1 " href="temple.html">famous temples </a>
+        <a class="dropdown-item  "style="color: #F62BD1 " href="#">Advantures destination</a>
+
+         </div>
+        </div>
+        </div>
+
+        <section>
+         
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-6">
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-6">
+<button class="open-button text-center mx-auto" onclick="openForm()">book trip</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Register Trip</h3>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="source"><b>source</b></label>
+    <input type="text" placeholder="Enter source" name="source" required>
+
+    <label for="Destination"><b>Destination</b></label>
+    <input type="text" placeholder="Enter Destination" name="email" required>
+
+    <label for="noofperson"><b>Total Person</b></label>
+    <input type="text" placeholder="Enter No Of Person" name="email" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-4">
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+        </section>
+  			   
+    </ul>
+  </body>
+  </html>

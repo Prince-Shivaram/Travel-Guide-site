@@ -1,0 +1,1214 @@
+<html>
+	<head>
+		 	<meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  			<style type="text/css">
+         
+          #demo{
+            font-family: 'Nanum Myeongjo', serif;
+          }
+          .container
+          {
+            font-family: 'Nanum Myeongjo', serif;
+          }
+  			.jumbotron img
+  				{
+  					width:100%;
+  					height:100%;
+            size: cover;
+          
+
+  				}
+          .zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+          }
+  
+.carousel-inner img
+{
+  width:100%;
+  height: 85%;
+}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+#drop
+{
+  display: none;
+  list-style: none;
+}
+#drop:hover
+{
+  display: block;
+}
+h1
+{
+ font-family: 'Sacramento', cursive;
+}
+#mh
+{
+ display: none;
+}
+#mh2
+{
+  display: none;
+}
+#pun
+{
+  display: none;
+}
+#pun2
+{
+  display: none;
+}
+#tam
+{
+  display: none;
+}
+#tam2
+{
+  display: none;
+}
+#sik
+{
+  display: none;
+}
+#sik2
+{
+  display: none;
+}
+#sim
+{
+  display: none;
+}
+#sim2
+{
+  display: none;
+}
+#man
+{
+  display: none;
+}
+#man2
+{
+  display: none;
+}
+#goa
+{
+  display: none;
+}
+#goa2{display: none;}
+#mum{display: none;}
+#mum2{display: none;}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=email], input[type=password],input[type=name] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+   
+    cursor: pointer;`
+  
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 12px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+        }
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.nav-item:hover
+{
+  
+  
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-color: red;
+
+}
+
+
+  			</style>
+        <script>
+          $("document").ready(function(){
+            $("#mh1").click(function(){
+              $("#mh").show();
+              $("#mh2").show();
+              $("#mh1").hide();
+
+
+            });
+            $("#mh2").click(function(){
+
+              $("#mh").hide();
+              $("#mh2").hide();
+
+              $("#mh1").show();
+            });
+
+             $("#pun1").click(function(){
+              $("#pun").show();
+              $("#pun2").show();
+              $("#pun1").hide();
+
+
+            });
+            $("#pun2").click(function(){
+
+              $("#pun").hide();
+              $("#pun2").hide();
+              $("#pun1").show();
+            });
+
+            $("#tam1").click(function(){
+              $("#tam").show();
+              $("#tam2").show();
+              $("#tam1").hide();
+
+
+            });
+            $("#tam2").click(function(){
+
+              $("#tam").hide();
+              $("#tam2").hide();
+              $("#tam1").show();
+            });
+
+             $("#sik1").click(function(){
+              $("#sik").show();
+              $("#sik2").show();
+              $("#sik1").hide();
+
+
+            });
+            $("#sik2").click(function(){
+
+              $("#sik").hide();
+              $("#sik2").hide();
+              $("#sik1").show();
+            });
+
+
+             $("#sim1").click(function(){
+              $("#sim").show();
+              $("#sim2").show();
+              $("#sim1").hide();
+
+
+            });
+            $("#sim2").click(function(){
+
+              $("#sim").hide();
+              $("#sim2").hide();
+              $("#sim1").show();
+            });
+
+
+          $("#man1").click(function(){
+              $("#man").show();
+              $("#man2").show();
+              $("#man1").hide();
+
+
+            });
+            $("#man2").click(function(){
+
+              $("#man").hide();
+              $("#man2").hide();
+              $("#man1").show();
+            });
+
+            $("#goa1").click(function(){
+              $("#goa").show();
+              $("#goa2").show();
+              $("#goa1").hide();
+
+
+            });
+            $("#goa2").click(function(){
+
+              $("#goa").hide();
+              $("#goa2").hide();
+              $("#goa1").show();
+            });
+
+             $("#mum1").click(function(){
+              $("#mum").show();
+              $("#mum2").show();
+              $("#mum1").hide();
+
+
+            });
+            $("#mum2").click(function(){
+
+              $("#mum").hide();
+              $("#mum2").hide();
+              $("#mum1").show();
+            });
+
+
+          });
+          var count = 2;
+function run() {
+var un = document.myform.email.value;
+var pw = document.myform.pass.value;
+var valid = false;
+var unArray = ["piyush@pikashu.com", "karan@pikashu.com", "shubham@pikashu.com"];  // as many as you like - no comma after final entry
+var pwArray = ["piyush", "karan", "shubham"];  // the corresponding passwords;
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+if (valid ) {
+  if(un=="piyush@pikashu.com" && pw=="piyush")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika.html";
+return false;
+}
+else if(un=="karan@pikashu.com" && pw=="karan")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika1.html";
+return false;
+}
+if(un=="shubham@pikashu.com" && pw=="shubham")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika2.html";
+return false;
+}
+}
+var t = " tries";
+if (count == 1) {t = " try"}
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+}
+
+</script>
+<!--script for login function -->
+    <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+  </script>      
+
+<!--script for signup function -->
+<script>
+    // Get the modal
+  var hi = document.getElementById('id02');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == hi) {
+        modal.style.display = "none";
+    }
+  }
+        </script>
+       
+  	</head>
+		<body>
+    
+
+      <div class="container-fluid " style="height: 60px;width: 100%;background-color: white">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center mt-3" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+       
+        
+         </div>
+        
+      </div>
+    </div>
+
+    
+			<ul id="des1"class="nav mx-auto ml-auto text-center text-light bg-light sticky-top " style="height: 100px;width: 100%;border-bottom: 4px solid grey; border-top: 1px solid red;" >
+				  <li class="nav-item active my-auto mt-auto ">
+             <a class="nav-link text-dark my-auto mt-auto"  href="home.html" style="font-weight: bold;">home</a>
+          </li>
+  				<li class="nav-item my-auto mt-auto">
+   					 <a class="nav-link text-dark" href="popularcities.html" >hotel</a>
+ 			    </li>
+          <li class="nav-item my-auto mt-auto">
+             <a class="nav-link text-dark" href="popularcities.html" >check bookings</a>
+          </li>
+  			   
+           <li class="nav-item my-auto mt-auto">
+            <a class="nav-link text-dark" href="contact.html" >contact us</a>
+           </li>
+           <div class="dropdown my-auto mt-auto">
+         <button class="btn  dropdown-toggle bg-light my-auto mt-auto"  id="dropdownMenuButton" data-toggle="dropdown"   style="font-family: 'Cinzel', serif; color: black">
+            Catogaries
+          </button>
+         <div class="dropdown-menu" style="background-color: white;" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item text-warning" href="popularcities.html">Famous cities</a>
+          <a class="dropdown-item text-warning" href="touristplace.html">Famous Tourist place</a>
+          <a class="dropdown-item text-warning" href="popularstates.html">Popular States </a>
+           <a class="dropdown-item text-warning" href="hillstation.html">hill station</a>
+            <a class="dropdown-item text-warning" href="honeymoon.html">Honeymoon destination</a>
+          <a class="dropdown-item text-warning" href="summer.html">Summer destination</a>
+           <a class="dropdown-item text-warning" href="Winter.html">Winter destination</a>
+
+        <a class="dropdown-item text-warning" href="temple.html">famous temples </a>
+        <a class="dropdown-item text-warning" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+         <form class="my-auto " style="margin-left: 300px" >
+            <input type="text" name="search hotel my-auto " style="" placeholder="search place" >
+            <button class=" " style="background-color: #76D7C4" >search</button>
+           </form>
+            <img src="p.png" alt="Avatar" class="avatar img-fluid" style="height: 30px;width: 25px; float: right;margin-top: 30px;margin-left: 40px" > 
+        <a class="nav-link text-dark my-auto mt-auto"  style="cursor: pointer; float: right;" onclick="document.getElementById('id01').style.display='block'" align="center" >Login</a>
+          
+         
+        </div>
+  			   
+    </ul>
+    <!--body for login-->
+<div border="0" cellspacing="0" cellpadding="30" width="60%" style="margin-center">
+    <br>
+  <div id="id01" class="modal"  ><br>
+        
+  
+  <form method="post" name="myform" class="modal-content animate" >
+    <div class="imgcontainer" width="400">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+    
+      <img src="p.png" alt="Avatar" class="avatar" >
+    </div>
+
+    <div class="container"style="background-color:#f1f1f1" >
+  
+      <label for="email">Email</label><br/>
+    <input type="email"  name="email" value="" autocomplete="off" autofocus="" ><br/>
+    <label for="password">Password</label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+    <button type="button" class="bg-success" onclick="run()" value="Login">Login</button>
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember">  Remember me
+      </label><br>
+    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" >Forgot <a href="forget_pass.html">password? </a> </span>
+      <span class="psw" >Forgot <a href="forget_pass.html">SignUp </a> </span>
+          <hr width=100% >
+       
+    </div>
+  </form>
+    </div>
+    
+</div>
+
+
+ <!--body for book trip-->
+
+
+<div id="id02" class="modal"  ><br>  
+   
+    <form method="post" name="myform1" class="modal-content animate" ><br><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+    <div class="container"style="background-color:#f1f1f1 ; width: 80%;margin-bottom: 30px" >
+          <h3 class="text-center">Hey!you are registering for trip </h3><hr>
+    <label for="name" >Name</label><br>
+        <input type="name"  name="name" value="" ><br/>
+    <label for="email">Email</label><br/>
+    
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Total Person </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Source Station </label><br/>
+      <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Destination </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Adress </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Contact No. </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+    <label for="gender">Gender</label><br/><br/>
+    <input type="radio" id="gender" name="gender" style="width:22%;height:22px;>
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="gender" style="width:22%;height:22px;>
+    <label for="gender">Female</label><br/><br/>
+    <label for="Dob">Date of birth</label><br/><br/>
+    <select id="Day" size="1" style="width:20%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Day">Day</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    </select>
+    <select id="month" size="1" style="width:25%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Month">Month</option>
+    <option value="Jan">Jan</option>
+    <option value="Feb">Feb</option>
+    <option value="Mar">Mar</option>
+    <option value="Apr">Apr</option>
+    <option value="May">May</option>
+    <option value="Jun">Jun</option>
+    <option value="Jul">Jul</option>
+    <option value="Aug">Aug</option>
+    <option value="Sep">Sep</option>
+    <option value="Oct">Oct</option>
+    <option value="Nov">Nov</option>
+    <option value="Dec">Dec</option>
+    </select>
+    <select id="Year" size="1" style="width:20%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Year">Year</option>
+    <option value="2008">2018</option>
+    <option value="2007">2017</option>
+    <option value="2006">2016</option>
+    <option value="2005">2015</option>
+    <option value="2004">2014</option>
+    <option value="2003">2013</option>
+    <option value="2002">2012</option>
+    <option value="2001">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2002">2002</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+    <option value="1999">1999</option>
+    <option value="1998">1998</option>
+    <option value="1997">1997</option>
+    <option value="1996">1996</option>
+    <option value="1995">1995</option>
+    <option value="1994">1994</option>
+    <option value="1993">1993</option>
+    <option value="1992">1992</option>
+    <option value="1991">1991</option>
+    <option value="1990">1990</option>
+    <option value="1989">1989</option>
+    <option value="1988">1988</option>
+    <option value="1987">1987</option>
+    <option value="1986">1986</option>
+    <option value="1985">1985</option>
+    <option value="1984">1984</option>
+    <option value="1983">1983</option>
+    <option value="1982">1982</option>
+    <option value="1981">1981</option>
+    <option value="1980">1980</option>
+    </select>
+    <br>
+        <button type="button" class="mt-1 bg-success" onclick="k()" value="SignUp"  >book</button>  <br>
+      <button type="button" class="bg-danger mt-2" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+       
+    </div>
+</form>
+      
+    </div>
+      
+      
+    
+<div id="demo"  class="carousel slide " style="margin-top: -25px" data-ride="carousel">
+
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner text-dark">
+    <div class="carousel-item active">
+      
+      <img src="images\hp7.jpg" alt="goa">
+      <div class="carousel-caption">
+         <h3 class="lead ">VARANASI</h3>
+    <p class="lead">We had such a great time in Varanasi!</p>
+   
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\bg8.jpg" alt="Kerela">
+      <div class="carousel-caption">
+         <h3 class="lead">Rajasthan</h3>
+    <p class="lead">We had such a great time in Rajasthan!</p>
+   
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\hp12.jpg" alt="taj mahal">
+      <div class="carousel-caption">
+    <h3 class="lead">KERELA</h3>
+    <p class="lead">We had such a great time at Kerela!</p>
+  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+
+	<section>
+		<div class="container ">
+      <div>
+			<h2 class="text-center mt-4">About India</h2>
+      <hr class="text-center w-25 bg-danger">
+      <p>Tourism in India has shown a phenomenal growth in the past decade. One of the reasons is that the Ministry of tourism, India has realized the immense potential of tourism in India during vacations. India travel tourism has grown rapidly with a great influx of tourists from all across the globe who have been irresistibly attracted to the rich culture, heritage, and incredible natural beauty of India. India tourism with its foggy hill stations, captivating beaches, historical monuments, golden deserts, serene backwaters, pilgrimage sites, rich wildlife, and colourful fairs capture the heart of every tourist. In addition, a variety of festivals, lively markets, vibrant lifestyle, and traditional Indian hospitality, will make your experience as an india tourist truly unforgettable and fantastic. Travel through the lovely Indian states and discover closely the resplendent colors and rich cultural locales of this incredible land. Our India tourism guide provides you a glimpse of travel and tourism in india ,india tourism information about south india tourism, north India tourism, and all the major tourist destinations, and tourism services of India. For more information about travel and tourism India and tourism of India</p>
+      </div>
+     
+    </section>
+
+    <br>
+    <br>
+    <section>
+			 <div class="container mt-3 mb-5 text-center bg-light">
+          <h4 id="regions" class=" text-center text-capitalize">regions in india</h4>
+          <hr class="text-center w-25 bg-secondary mb-5">
+          <div class="row mx-auto">
+			     <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\ni3.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">north india</h4>
+              <p class="card-text">best in summer(march-may)</p>
+              <a href="northindia.html" class="btn btn-primary">visit</a>
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\si1.jpg" alt="Card image">
+                <div class="card-body">
+                 <h4 class="card-title">south india</h4>
+                 <p class="card-text">welcome to south india.</p>
+                <a href="southindia.html" class="btn btn-primary">visit</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\wi1.jpg" alt="Card image">
+                   <div class="card-body">
+                    <h4 class="card-title">west india</h4>
+                    <p class="card-text">welcome to west india.</p>
+                      <a href="westindia.html" class="btn btn-primary">visit</a>
+                   </div>
+              </div>
+          </div>
+		    </div>
+        <div class="row mx-auto">
+          
+            <div class="card mx-auto" style="width:350px">
+              <div class="zoom">
+                <img class="card-img-top " src="images\ei5.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">east india</h4>
+                <p class="card-text"> welcome to east india</p>
+                <a href="east.html" class="btn btn-primary">visit</a>
+                </div>
+           </div>
+          </div>
+            <div class="card mx-auto" style="width:350px">
+              <div class="zoom">
+                <img class="card-img-top mr-1" src="images\nei2.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h4 class="card-title">north-east india</h4>
+                      <p class="card-text">welcome to north-east</p>
+                    <a href="#" class="btn btn-primary">visit</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width:350px">
+              <div class="zoom">
+            <img class="card-img-top mr-1" src="images\hn.jpg" style="height: 200px" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">central india</h4>
+              <p class="card-text">welcome to central india</p>
+              <a href="#" class="btn btn-primary">visit</a>
+            </div>
+          </div>
+          </div>
+        </div>
+	</section>
+
+
+  <section>
+      <div class="container bg-light mb-3 mx-auto">
+        <h3 class="text-center text-capitalize text-dark mt-3"> popular states in india</h3>
+        <hr class="text-center w-25 bg-secondary">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-3 mb-3 ">
+            <div class="zoom">
+            <img src="images\mah2.jpg" alt="maharastra" class="img-fluid" style="height: 200px"> 
+            </div>
+            <h5 class="text-center " style="font-weight: bold;">Maharastra</h5>
+            <p> Maharashtra  is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau. It is the second-most populous state and third-largest state by area in India.</p>
+            <p id="mh"> Spread over 307,713 km2 (118,809 sq mi), it is bordered by the Arabian Sea to the west, the Indian states of Karnataka and Goa to the south, Telangana to the southeast and Chhattisgarh to the east Gujarat and Madhya Pradesh to the north, and the Indian union territory of Dadra and Nagar Haveli to the north west.[9] It is also the world's second-most populous subnational entity. Maharashtra was formed by merging the western and south-western parts of the Bombay State, Berar and Vidarbha, and the north-western parts of the Hyderabad State and splitting Saurashtra (in present-day Gujarat) by the States Reorganisation Act.</p>
+            <button id="mh2" class=" btn text-center ml-auto" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+            <button id="mh1" class="btn text-center ml-auto" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Tourist Places</button>
+          </div>
+          <div class="col-lg-3 clo-md-3 col-3 ">
+            <div class="zoom">
+            <img src="images\pun1.jpg" alt="punjab" class="img-fluid" style="height: 200px">
+            </div>
+            <h5 class="text-center" style="font-weight: bold;">Punjab</h5>
+            <p>The word Punjab is a compound of two Persian words, panj (“five”) and āb (“water”), thus signifying the land of five waters, or rivers (the Beas, Chenab, Jhelum, Ravi, and Sutlej).</p>  <p id="pun">
+           The word’s origin can perhaps be traced to panca nada, Sanskrit for “five rivers” and the name of a region mentioned in the ancient epic the Mahabharata.Punjab holds numerous religious and seasonal festivals, such as Dussehra, a Hindu festival celebrating the victory of Prince Rama over the demon king Ravana, as recounted in the epic Ramayana; Diwali, a festival of lights celebrated by both Hindus and Sikhs; and Baisakhi, which for Hindus is a new year’s festival and for Sikhs is both an agricultural festival and a celebration of the birth of the community’s Khalsa order. There also are numerous anniversary celebrations in honour of the Gurus (the 10 historical leaders of Sikhism) and various saints. </p> 
+            <button id="pun1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="pun2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+            <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Tourist Places</button>
+
+          </div>
+          <div class="col-lg-3 clo-md-3 col-3 ">
+            <div class="zoom">
+           <a href="tamilnadu.html"> <img src="images\tam3.jpg" alt="tamilnadu" class="img-fluid" style="height: 200px"> </a>
+           </div>
+            <h5 class="text-center" style="font-weight: bold;">Tamilnadu</h5>
+            <p>Tamil Nadu, state of India, located in the extreme south of the subcontinent. It is bounded by the Indian Ocean to the east and south and by the states of Kerala to the west. </p> <p id="tam">
+            and Andhra Pradesh to the north.Tamil Nadu represents the Tamil-speaking area of what was formerly the Madras Presidency of British India. The Tamils are especially proud of their Dravidian language and culture, and they have notably resisted attempts by the central government to make Hindi  the sole national language. While it has an industrial core in Chennai, the state is essentially agricultural. Area 50,216 square miles .Tamil Nadu is divided naturally between the flat country along the eastern coast and the hilly regions in the north and west. The broadest part of the eastern plains is the fertile Kaveri River delta; farther south are the arid flatlands surrounding the cities of Ramanathapuram and Madurai.</p>
+            <button id="tam1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="tam2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+           <a href="tamilnadu.html"> <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Tourist Places</button></a>
+          </div>
+          <div class="col-lg-3 clo-md-3 col-3 ">
+            <div class="zoom">
+            <img src="images\sik2.jpg" alt="sikkim" class="img-fluid" style="height: 200px"> 
+            </div>
+            <h5 class="text-center" style="font-weight: bold;">Sikkim</h5>
+            <p>Sikkim, state of India, located in the northeastern part of the country, in the eastern Himalayas. It is one of the smallest states in India. Sikkim is bordered by the Tibet Autonomous Region of China.</p><p id="sik"> to the north and northeast, by Bhutan to the southeast, by the Indian state of West Bengal to the south, and by Nepal to the west The capital is Gangtok, in the southeastern part of the state.Sikkim is a basin surrounded on three sides by precipitous mountain walls. There is little lowland, and the variation in relief is extreme. Within a stretch of roughly 50 miles (80 km), the land rises from an elevation of about 750 feet (225 metres) in the Tista River valley to nearly 28,200 feet (8,600 metres) at Kanchenjunga, India’s highest peak and the world’s third highest mountain.</p>
+             <button id="sik1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="sik2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+           <a href="sikkim.html"> <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Tourist Places</button></a>
+          </div>
+         
+          
+          <a href="popularstates.html" class="bg-success mx-auto  mt-5 text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>        </div>
+      </div>
+  </section>
+
+
+
+  <section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">popular place in india</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\simla1.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">shimla</h5>
+             <p>Come for a holiday and get opportunity to spend quality time close to Mother Nature and make your trip most relaxing. What more you can expect from your holiday trip. </p><p id="sim"> Shimla is such a trip, especially for those who have a passion of explroring natural beauty and serene environment, nothing can be compared with such amazing places. If you are also one of them, defiantly the warm welcome from tourism in Shimla would make your dream come true. Talking about Shimla, the Queen of Hills is situated at an altitude of 2215 meter above the sesa level. Being one of the largest hill stations/cities in India, Shimla is the capital city of Himachal Pradesh, where honeymooners, couples, nature tour lovers and those who look for serenity and tranquillity come to enjoy their holidays</p>
+             <button id="sim1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="sim2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+         <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">book trip</button>
+       
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\manali1.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">manali</h5>
+              <p>Manali is a hill station in the mountains of the Indian state of Himachal Pradesh, at the northern end of the Kullu valley. It is located at an altitude of 2,050 m (6,726 ft.) in the Beas River Valley.</p><p id="man"> The district Manali is located in is Kullu. And has a population of about 31000. This town is the 
+             beginning of an ancient trade route to Ladakh and a roadway to other northern hill stations.The town became a popular tourist destination only recently after the British visited it frequently due to the favorable climate and beautiful landscape and the rise of militancy in Kashmir also boosted tourism in Manali in the 1980s. The town is visited by tourists throughout the year, and there are 800 ­ 1000 hotels and guesthouses in the town and outskirts. People come here with families, on honeymoons, or in search of adventure sports. Manali offers a wide range of activities like mountain biking, skiing, trekking, paragliding, cannoning,</p>
+              <button id="man1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="man2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+         <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">book trip</button>
+            
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\goa4.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">goa</h5>
+              <div>
+                <p>Goa (Go Goa) is known for its striking landscape, famous beaches in India, astounding monuments and churches and bustling Goa nightlife. Goa is one of the most visited tourist places in India,</p>
+                <p id="goa">especially on weekends, as it is not very far from Mumbai and having Panaji as its capital and Vasco da Gama as the largest city. It attracts a large number of tourists from all over the world, round the year. There are several places to visit & tourist attraction points in Goa, making the Goa travel information and tourism guide incredibly rich with Goa Map & Images. In this amazing beach town, you find a number of options for cheap Goa hotel packages, budget rates for Goa resorts & luxury accommodation with a large range of Goa hotels and resorts. Also there are several affordable tours & packages available for Goa tour.</p>
+                 <button id="goa1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="goa2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+         <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">book trip</button>
+            
+              </div>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <a href="mumbaitp.html"><img src="images\mum3.jpg" class="img-fluid" style="height: 200px"></a>
+              </div>
+              <h5 class="text-center text-capitalize">mumbai</h5>
+              <div>
+                <p>Mumbai, formerly Bombay, city, capital of Maharashtra state, southwestern India. It is the country’s financial and commercial centre and its principal port on the Arabian Sea</p>
+                <p id="mum">Located on Maharashtra’s coast, Mumbai is India’s most-populous city, and it is one of the largest and most densely populated urban areas in the world. It was built on a site of ancient settlement, and it took its name from the local goddess Mumba—a form of Parvati, the consort of Shiva, one of the principal deities of Hinduism—whose temple once stood in what is now the southeastern section of the city. It became known as Bombay during the British colonial period, the name possibly an Anglicized corruption of Mumbai or perhaps of Bom Baim (“Good Harbour”), supposedly a Portuguese name for the locale. The name Mumbai was restored officially in 1995, although Bombay remained in common usage</p>
+                 <button id="mum1" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read More</button>
+            <button id="mum2" class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Read Less</button>
+         <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">book trip</button>
+              </div>
+              </div>
+            
+             <a href="touristplace.html" class="bg-success mx-auto mt-5 text-center text-capitalize"> <button class="btn bg-success mx-auto  text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+
+
+<section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">popular temples in india</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\tem1.jpg" class="img-fluid">
+              </div>
+              <h5 class="text-center text-capitalize">Kedarnath</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\tem2.jpg" class="img-fluid">
+              </div>
+              <h5 class="text-center text-capitalize">sri venkateshwar</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\tem3.jpg" class="img-fluid">
+              </div>
+              <h5 class="text-center text-capitalize">Badrinath</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <img src="images\tem4.jpg" class="img-fluid">
+              </div>
+              <h5 class="text-center text-capitalize">sirdi</h5>
+              
+              </div>
+            
+             <a href="temple.html" class="bg-success mx-auto text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">popular hill station in india</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\hs1.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">himachal pradesh</h5>
+            
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\hs2.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">ooty</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\hs3.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Darjleeing</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <img src="images\hs4.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">mussorri</h5>
+              
+              </div>
+            
+             <a href="hillstation.html" class="bg-success mx-auto text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+
+  <section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">popular honemoon destination</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\hm1.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Andaman Nicobar</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\hm2.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Goa</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\hm3.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Agra</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <img src="images\hm4.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Udaipur</h5>
+            
+              </div>
+            
+             <a href="honeymoon.html" class="bg-success mx-auto text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+
+  
+  </section>
+
+    <section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">summer vacation destination</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\sv6.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Laddakh</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\sv7.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Kashmir</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\sv4.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Nainitaal</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <img src="images\sv8.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Gangtok</h5>
+             
+              </div>
+            
+             <a href="summer.html" class="bg-success mx-auto text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+
+
+  </section>
+
+    <section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">winter vacation destination</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\wv1.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Kerela</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\wv2.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Alleppey</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\wv3.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Puducherry</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <img src="images\wv4.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Rajasthan</h5>
+             
+              </div>
+            
+             <a href="winter.html" class="bg-success mx-auto text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+   <section>
+      <div class="container bg-light mb-5">
+        <h3 class="text-center text-capitalize">Adventures Tour destination</h3>
+        <hr class="text-center bg-secondary w-25 mb-4">
+        <div class="row bg-light">
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\ap1.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize"> Bir-Billing</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\ap2.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Rishikesh</h5>
+              
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+              <img src="images\ap3.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Laddakh</h5>
+             
+            </div>
+            <div class="col-lg-3 col-md-3 col-3">
+              <div class="zoom">
+             <img src="images\ap4.jpg" class="img-fluid" style="height: 200px">
+              </div>
+              <h5 class="text-center text-capitalize">Kerela</h5>
+             
+              </div>
+            
+             <a href="touristplace.html" class="bg-success mx-auto text-center text-capitalize"> <button class="btn bg-success mx-auto text-center text-capitalize">view more</button></a>
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container-fluid  text-center text-capitalize text-light mx-auto " style="background-color: #17202A ; height: 150px;width: 100%">
+      <div class="row">
+        <h3>Get started for free — join the millions of tourists already using Tourindia to make their vacation memorable, join us , and have the real fun of nature.</h3>
+      </div> 
+    </div>
+    <div class="container-fluid text-center text-light " style="background-color: #17202A ; height: 100px;width: 100%">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-3">
+          
+          <h6>  username</h6>
+         <input type="text" name="username" placeholder="username" style="border:1px solid red">
+        
+        </div>
+        <div class="col-lg-3 col-md-3 col-3">
+          <h6>  Email</h6>
+        <input type="Email" name="Email" file:///C:/Users/satya%20p%20verma/Desktop/html/home.html#demopattern="Email" style="border:1px solid red">
+        
+        </div>
+        
+        <div class="col-lg-3 col-md-3 col-3">
+          <h6>  Password</h6>
+        <input type="Password" name="Password" placeholder="password" style="border:1px solid red">
+          
+        </div>
+        <div class="col-lg-3 col-md-3 col-3">
+         <button class="btn mt-3"style="border:1px solid red">Sign Up</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+  
+		</body>
+	
+</html>

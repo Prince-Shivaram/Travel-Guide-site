@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    		 <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    		 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    		     		  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+
+
+    		 <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style type="text/css">
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=email], input[type=password],input[type=name] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+   
+    cursor: pointer;`
+  
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 12px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+        }
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.nav-item:hover
+{
+  
+  margin-top: 5px;
+  text-decoration: underline;
+  text-decoration-color: red;
+
+}
+  				.zoom
+          {
+            position: relative;
+            overflow: hidden;
+          }
+          .zoom:hover img
+          {
+            transform: scale(1.1);
+          }
+          h1
+			{
+ 			font-family: 'Sacramento', cursive;
+			}
+			 h4
+			{
+ 			font-family: 'Crimson Text', serif;
+			}
+			 h2
+			{
+ 			
+ 			font-family: 'Crimson Text', serif;
+			}
+			h3
+			{
+font-family: 'Crimson Text', serif;			}
+			p
+{
+font-family: 'Crimson Text', serif;
+}
+#des1
+{
+  font-family: 'Cinzel', serif;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 5px 7px;
+  border: none;
+  cursor: pointer;
+  
+
+ 
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  
+  border: 3px solid #f1f1f1;
+ 
+}
+
+/* Add styles to the form container */
+.form-container {
+ 
+  padding: 5px;
+  background-color: white;
+  border:2px solid grey;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 7px;
+ 
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 7px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;}
+
+
+</style>
+<script type="text/javascript">
+   var count = 2;
+function run() {
+var un = document.myform.email.value;
+var pw = document.myform.pass.value;
+var valid = false;
+var unArray = ["piyush@pikashu.com", "karan@pikashu.com", "shubham@pikashu.com"];  // as many as you like - no comma after final entry
+var pwArray = ["piyush", "karan", "shubham"];  // the corresponding passwords;
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+if (valid ) {
+  if(un=="piyush@pikashu.com" && pw=="piyush")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika.html";
+return false;
+}
+else if(un=="karan@pikashu.com" && pw=="karan")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika1.html";
+return false;
+}
+if(un=="shubham@pikashu.com" && pw=="shubham")
+  {
+alert ("Login was sucessfully processed.  You will be redirected to the members page now.");
+window.location = "homepika2.html";
+return false;
+}
+}
+var t = " tries";
+if (count == 1) {t = " try"}
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+}
+
+
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+  
+    // Get the modal
+  var hi = document.getElementById('id02');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == hi) {
+        modal.style.display = "none";
+    }
+  }
+</script>
+</head>
+<body>
+	 <div class="container-fluid " style="height: 60px;width: 100%;background-image: linear-gradient(to right,#7E7D7E,white,#171517);">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-4">
+        <h1 class=" text-dark  text-center" style="font-weight: bold;">Tourindia.com</h1>
+      </div>
+       <div class="col-lg-4 col-md-4 col-4">
+       
+      </div>
+       <div class="col-lg-4 col-md-4 col-4 my-auto">
+       
+         <form >
+            <input type="text" name="search hotel" placeholder="search place" >
+            <button class=" btn" style="background-color: #76D7C4" >search</button>
+           </form>
+          
+         </div>
+        
+      </div>
+    </div>
+	<section class="sticky-top">
+	<ul id="des1" class="nav  ml-auto text-dark bg-light  sticky-top mb-1"  style=";background-color:white;height: 100px;width: 100%;border-bottom: 4px solid grey; border-top: 1px solid red;font-weight: bold; font-size: 40px ">
+
+
+				<li class="nav-item my-auto mt-auto ">
+   					 <a class="nav-link text-dark" href="index.html" style="font-weight: bold;">home</a>
+ 			    </li>
+  				<li class="nav-item my-auto mt-auto">
+   					 <a class="nav-link text-dark" href="popularcities.html" style="font-weight: bold;">popular cities</a>
+ 			    </li>
+          		<li class="nav-item my-auto mt-auto ">
+             		<a class="nav-link text-dark" href="touristplace.html" style="font-weight: bold;">tourist places</a>
+          		</li>
+          		
+ 			    <li class="nav-item my-auto mt-auto">
+    				<a class="nav-link text-dark" href="#" style="font-weight: bold;">hotels</a>
+  			    </li>
+ 			    
+  			   <li class="nav-item active my-auto mt-auto">
+    				<a class="nav-link text-dark" href="popularstates.html" style="font-weight: bold;">popular states</a>
+  			   </li>
+  			  
+           <li class="nav-item my-auto mt-auto">
+            <a class="nav-link text-dark" href="contact.html" style="font-weight: bold;">contact us</a>
+           </li>
+           <div class="dropdown my-auto mt-auto ">
+         <button class="btn  dropdown-toggle my-auto mt-auto bg-light"  id="dropdownMenuButton" data-toggle="dropdown"   style="font-family: 'Cinzel', serif; ">
+            Catogaries
+          </button>
+         <div class="dropdown-menu" style="background-color: white;" aria-labelledby="dropdownMenuButton">
+           <a class="dropdown-item bg-faded" href="hillstation.html">hill station</a>
+            <a class="dropdown-item" href="honeymoon.html">Honeymoon destination</a>
+          <a class="dropdown-item" href="summer.html">Summer destination</a>
+           <a class="dropdown-item" href="winter.html">Winter destination</a>
+
+        <a class="dropdown-item" href="temple.html">famous temples </a>
+        <a class="dropdown-item" href="#">Advantures destination</a>
+
+         </div>
+        </div>
+        
+  			    
+			</ul>
+		</section>
+		<section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-6">
+			<div class="container-fluid" style="height: 400px; width: 100%">
+
+					<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="id02" class="modal"  ><br>  
+   
+    <form method="post" name="myform1" class="modal-content animate" ><br><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+    <div class="container"style="background-color:#f1f1f1 ; width: 80%" >
+          <h3 class="text-center">Hey!you are registering for trip </h3><hr>
+    <label for="name" >Name</label><br>
+        <input type="name"  name="name" value="" ><br/>
+    <label for="email">Email</label><br/>
+    
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Total Person </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Source Station </label><br/>
+      <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Destination </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Adress </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+        <label for="total person">Contact No. </label><br/>
+    <input type="password" id="pass" name="pass" value=""><br/>
+    <label for="gender">Gender</label><br/><br/>
+    <input type="radio" id="gender" name="gender" style="width:22%;height:22px;>
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="gender" style="width:22%;height:22px;>
+    <label for="gender">Female</label><br/><br/>
+    <label for="Dob">Date of birth</label><br/><br/>
+    <select id="Day" size="1" style="width:20%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Day">Day</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    </select>
+    <select id="month" size="1" style="width:25%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Month">Month</option>
+    <option value="Jan">Jan</option>
+    <option value="Feb">Feb</option>
+    <option value="Mar">Mar</option>
+    <option value="Apr">Apr</option>
+    <option value="May">May</option>
+    <option value="Jun">Jun</option>
+    <option value="Jul">Jul</option>
+    <option value="Aug">Aug</option>
+    <option value="Sep">Sep</option>
+    <option value="Oct">Oct</option>
+    <option value="Nov">Nov</option>
+    <option value="Dec">Dec</option>
+    </select>
+    <select id="Year" size="1" style="width:20%;height:30px;font-size:20px;border-radius:5px">
+    <option value="Year">Year</option>
+    <option value="2008">2018</option>
+    <option value="2007">2017</option>
+    <option value="2006">2016</option>
+    <option value="2005">2015</option>
+    <option value="2004">2014</option>
+    <option value="2003">2013</option>
+    <option value="2002">2012</option>
+    <option value="2001">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2002">2002</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+    <option value="1999">1999</option>
+    <option value="1998">1998</option>
+    <option value="1997">1997</option>
+    <option value="1996">1996</option>
+    <option value="1995">1995</option>
+    <option value="1994">1994</option>
+    <option value="1993">1993</option>
+    <option value="1992">1992</option>
+    <option value="1991">1991</option>
+    <option value="1990">1990</option>
+    <option value="1989">1989</option>
+    <option value="1988">1988</option>
+    <option value="1987">1987</option>
+    <option value="1986">1986</option>
+    <option value="1985">1985</option>
+    <option value="1984">1984</option>
+    <option value="1983">1983</option>
+    <option value="1982">1982</option>
+    <option value="1981">1981</option>
+    <option value="1980">1980</option>
+    </select>
+    <br>
+        <button type="button" class="mt-1 bg-success"  value="SignUp"  >book</button>  <br>
+      <button type="button" class="bg-danger mt-2" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+       
+    </div>
+</form>
+      
+    </div>
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <img src="images\ban11.jpg" alt="goa" style="height: 350px;width: 100%">
+      <div class="carousel-caption">
+    
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\ban8.jpg" alt="Kerela" style="height: 350px;width: 100%">
+      <div class="carousel-caption">
+    
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\ban10.jpg" alt="taj mahal" style="height: 350px;width: 100%">
+      <div class="carousel-caption">
+    
+  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+				
+			</div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-6">
+      <p>West Bengal, state of India, located in the eastern part of the country. It is bounded to the north by the state of Sikkim and the country of Bhutan, to the northeast by the state of Assam, to the east by the country of Bangladesh, to the south by the Bay of Bengal, to the southwest by the state of Odisha, to the west by the states of Jharkhand and Bihar, and to the northwest by the country of Nepal.West Bengal has a peculiar configuration; its breadth varies from 200 miles (320 km) at one point to hardly 10 miles (16 km) at another. Its roughly 1,350-mile (2,200-km) frontier with Bangladesh, neither natural nor well defined, is of strategic importance. Although in area West Bengal ranks as one of the smaller states of India, it is one of the largest in population. The capital is Kolkata (Calcutta). Area 34,267 square miles (88,752 square km). Pop. (2011) 91,347,736.</p>
+      <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);  ">check route</button>
+                    <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">Hotels</button>
+                     <button class="btn" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">get custom packages</button>
+                      <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#ff433a,#ff577c);">book trip</button>
+    </div>
+  </div>
+</div>
+		</section>
+    <section>
+         
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-4">
+
+    </div>
+    
+
+
+
+        </section>
+
+
+		<section>
+			<div id="class1" class="container mt-4 text-center text-capitalize">
+				<h2 class="text-center text-capitalize text-dark" style=" font-weight:bold">here some famouse tourist place of West bengal</h2>
+				<hr class="w-50 bg-success text-center">
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\b1.jpg" alt="Card image">
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+                <h4 class="card-title">kolkata</h4>
+              <p class="card-text">Labeled as the 'City of Joy', the 'Cultural capital of India', Kolkata (formerly known as Calcutta) is a city with character and remnants of British Raj visible in its Victorian style architecture, trams and the nomenclature of the place..</p>
+              <button  class="btn text-center mx-auto" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button> 
+
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+              
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b2.jpg" alt="Card image" style="height: 230px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Darjleeng</h4>
+                 <p class="card-text">Household name because of its varieties of teas, Darjeeling is a hill station with vast expanses of tea estates and Tibetan influence in their craft, culture and cuisine.</p>
+                <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+                  <a href="#" class="btn "  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b3.jpg" alt="Card image"  style="height: 230px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Digha</h4>
+                    <p class="card-text">Beach town situated on the shores of Bay of Bengal, Digha is a popular tourist destination known for its pristine beaches and scenic views, especially among people in West Bengal.</p>
+                    <button  class="btn btn-primary"  onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div id="class2"class="container mt-4 text-center text-capitalize">
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\b4.jpg" alt="Card image"  style="height: 230px">
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+                <h4 class="card-title">Siliguri</h4>
+              <p class="card-text">Siliguri, also known as the Gateway of North East India, is a city in North Bengal famous for its temples and tea gardens.</p>
+              <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" style=" height: 230px;"src="images\b5.jpg" alt="Card image">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Sunderban</h4>
+                 <p class="card-text">Known for hosting the biggest mangrove forests in the world, Sundarbans provides the best mix for ecological balance right from 'Royal Bengal tigers' to roaring rivers and beautiful estuaries.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b6.jpg" alt="Card image"  style="height: 230px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Kurseong</h4>
+                    <p class="card-text">Also known as the 'Land of White Orchids', Kurseong is a hill station located close to Darjeeling famous for its waterfalls, temples and Buddhist gompas apart from the excellent view that the place provides</p>
+                      <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div  id="class3"class="container mt-4 text-center text-capitalize">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\b7.jpg" alt="Card image" style="height: 230px">
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+                <h4 class="card-title">Kalimpong</h4>
+              <p class="card-text">Kalimpong is a virgin hill station in West Bengal renowned for its panoramic valley views, Buddhists monasteries and churches and Tibetan handicrafts etc.</p>
+              <button class="btn " onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+              
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b8.jpg" alt="Card image" style="height: 230px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Bankura</h4>
+                 <p class="card-text">With much historical significance, Bankura is a town famous for its hills and temples and a treat for adventure sports enthusiasts such as trekkers and hikers.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b9.jpg" alt="Card image"  style="height: 230px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Tarapith</h4>
+                    <p class="card-text">Tarapith is a famous Hindu pilgrimage in the state of West Bengal and a Shakti Peetha, believed to be the place where eyes of Sati fell.</p>
+                      <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+						<a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div id="class4" class="container mt-4 text-center text-capitalize">
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\b10.jpg" alt="Card image"  style="height: 230px">
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+                <h4 class="card-title">Jalpaiguri</h4>
+              <p class="card-text">The largest district of North Bengal, Jalpaiguri is bounded by Bhutan in the North and Bangladesh in the South. It is a famous tourist place particularly known for the number of tea gardens, rice farms and heavy downpour.</p>
+              <button class="btn " onclick="document.getElementById('id02').style.display='block'" align="center" style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" style=" height: 230px;"src="images\b11.jpg" alt="Card image">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Howrah</h4>
+                 <p class="card-text">Howrah often referred to as the doorway to or the twin city of Kolkata, is a bustling yet appealing town located on the western bank of the mesmerising River Hooghly flowing through West Bengal. The interesting amalgamation of its traditions, history and present keeps it going.</p>
+                <button class="btn " onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b12.jpg" alt="Card image"  style="height: 230px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Chandannagar</h4>
+                    <p class="card-text">Wrapped in the interiors of West Bengal, in the Hooghly District, is the small yet significant town of Chandan Nagar. This small town could have been in place of present day Kolkata, had history gone as planned.</p>
+                      <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div id="class5" class="container mt-4 text-center text-capitalize">
+				
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\b13.jpg" alt="Card image" style="height: 230px">
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+                <h4 class="card-title">Mayapur</h4>
+              <p class="card-text">Standing at the junction of river Ganga and Jalangi, Mayapur is a laidback city with lovely views and plenty of temples, making it ideal for multitudes of team</p>
+              <button class="btn" onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+              <a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+              
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b14.jpg" alt="Card image" style="height: 230px">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Malda</h4>
+                 <p class="card-text">Malda, a city in Bengal, is famous for its archaeological sites and unique Mango varieties available in summer.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b15.jpg" alt="Card image"  style="height: 230px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Purulia</h4>
+                    <p class="card-text">The western most district in the state of West Bengal, Purulia is a beautiful destination blessed with mesmerizing natural beauty with lakes, hills and greenery all around.</p>
+                      <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+						<a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div id="class6" class="container mt-4 text-center text-capitalize">
+			<div class="row mx-auto">
+			    <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+            <img class="card-img-top" src="images\b16.jpg" alt="Card image"  style="height: 230px">
+               
+
+              <div class="card-body">
+              	 <a href="#"class="num-photos mt-2" >view images</a>
+                <h4 class="card-title">Bagdogra</h4>
+              <p class="card-text">Bagdogra is a small hill station town resting at the foothills of the Himalayas, in the Darjeeling district of West Bengal. It is often regarded as the gateway town to North-East India and the Himalayas.</p>
+              <button class="btn " style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+              <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+            </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" style=" height: 230px;"src="images\b17.jpg" alt="Card image">
+                 
+
+                <div class="card-body">
+                	<a class="num-photos mt-2" href="#">view images</a>
+                 <h4 class="card-title">Belur Math</h4>
+                 <p class="card-text">Sprawling over forty acres of land on the west bank of the Hooghly River, Belur; the Belur Math in Kolkata is a place of pilgrimage and also the headquarters of the Ramakrishna Math and Mission.</p>
+                <button class="btn " onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+                  <a href="#" class="btn btn-primary"  style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width:350px">
+            <div class="zoom">
+              <img class="card-img-top" src="images\b18.jpg" alt="Card image"  style="height: 230px">
+               
+                   <div class="card-body">
+                   	  <a class="num-photos mt-2" href="#">view images</a>
+
+                    <h4 class="card-title">Mandarmani Beach</h4>
+                    <p class="card-text">Mandarmani is a small and upcoming beach resort town near Kolkata, West Bengal. Due to its top-notch facilities and luxuries, it has a tremendous potential of becoming a world-class destination. </p>
+                      <button class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" align="center"  style="background-image: linear-gradient(to right,#44B19A,#9AC2BA);">book trip</button>
+						<a href="#" class="btn btn-primary" style="background-image: linear-gradient(to right,#ff433a,#ff577c); ">get custom packages</a>
+
+                   </div>
+              </div>
+          </div>
+		   </div>
+				
+			</div>
+
+		</section>
+		<section>
+			<div class="container">
+
+		</section>
+
+</body>
+</html>
